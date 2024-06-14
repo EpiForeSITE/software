@@ -1,6 +1,6 @@
 # Software development coordination
 
-This repo should be used for coordinating all the software development activities by the ForeSITE group.
+This repo should be used for coordinating all the software development activities by the ForeSITE group. Here is an example of another project (open) where I coordinated/organized open-source dev practices: https://github.com/USCbiostats/software-dev. We can use lots of it here.
 
 # Existing software packages
 
