@@ -1,6 +1,6 @@
 ---
 name: R package
-description: Add a new R package project
+about: Add a new R package project
 title: ""
 labels: ["r-package", "project"]
 ---
