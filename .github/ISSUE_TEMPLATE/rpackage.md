@@ -1,14 +1,24 @@
 ---
-name: R package
+name: R or Python package
 description: Add a new R package project
 title: ""
 labels: ["r-package", "project"]
 ---
 
-# [Title of the package]
+# [TITLE OF THE PACKAGE]
+
+This GH issue serves as a way to track the progress of an R package.
+
+## Basics: Phase 1
 
 - [ ] The code is available on GitHub.
-- [ ] It has an R package structure, i.e., can be installed using `R CMD INSTALL .`.
-- [ ] It has an extended example in the `vignettes` directory.
-- [ ] It has a `README.md` file with instructions on how to install and use the package from GitHub (or CRAN/Bioconductor).
-- [ ] The package can be installed from GitHub
+- [ ] It has an R/Python package structure, i.e., it can be installed using `R CMD INSTALL .` or `pip install .`.
+- [ ] It has an extended example in the `vignettes`/`docs` directory.
+- [ ] It has a `README.md` file with instructions on how to install and use the package from GitHub (or pip/CRAN/Bioconductor).
+- [ ] The package can be installed from GitHub.
+- [ ] We have a tutorial/presentation scheduled.
+
+## Intermediate
+
+- [ ] There's continuous integration [CI] using GitHub Actions [GHA] to test the package.
+- [ ] There's CI for building a website.
