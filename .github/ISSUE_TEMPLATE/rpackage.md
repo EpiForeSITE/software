@@ -1,6 +1,6 @@
 ---
-name: R package
-about: Add a new R package project
+name: R or Python package
+about: Add a new R or Python package project
 title: ""
 labels: ["r-package", "project"]
 ---
@@ -10,7 +10,7 @@ labels: ["r-package", "project"]
 This GitHub [GH] issue serves as a way to track the progress of an R or Python package.
 
 Project lead: [YOUR NAME] \
-GitHub repository: [URL] \
+GitHub repository: [URL] 
 
 ## Basics: Phase 1
 
