@@ -47,7 +47,7 @@ existing_software[, Repo := fifelse(
 # Creating a "ReadMore" link
 existing_software[, link_id := gsub(" ", "-", tolower(trimws(Tool)))]
 existing_software[, link_id := gsub("[^a-z0-9-]+", "-", link_id)]
-existing_software[, link_id := paste0("sec-", link_id)]
+existing_software[, link_id := gsub("-+", "-", link_id)]
 
 existing_software[, Description := sprintf(
     "%s<br>([Learn more...](profiles.md#%s))",
@@ -74,17 +74,14 @@ knitr::kable(dat)
 ```{r}
 #| label: create-profiles
 #| echo: false
-cat("## Profiles\n\n", file = "profiles.qmd")
+cat("## Profiles\n\n", file = "profiles.md")
 for (i in 1:nrow(existing_software)) {
     cat(
         sprintf(
-            "# %s {#%s}\n\n",
-            existing_software$Tool[i],
-            existing_software$link_id[i]
+            "# %s\n\n",
+            existing_software$Tool[i]
         ),
-        file = "profiles.qmd", append = TRUE)
-    cat(sprintf("%s\n\n", existing_software$Description[i]), file = "profiles.qmd", append = TRUE)
+        file = "profiles.md", append = TRUE)
+    cat(sprintf("%s\n\n", existing_software$Description[i]), file = "profiles.md", append = TRUE)
 }
-
-system("quarto render profiles.qmd --to gfm")
 ```
