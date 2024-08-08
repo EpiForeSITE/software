@@ -77,13 +77,13 @@ knitr::kable(dat)
 writer <- \(x) {
     cat(x, file = "profiles.md", append = TRUE)
 }
-cat("## Profiles\n\n", file = "profiles.md")
+cat("# Profiles\n\n", file = "profiles.md")
 for (i in 1:nrow(existing_software)) {
 
     # Header
     writer(
         sprintf(
-            "# %s\n\n",
+            "## %s\n\n",
             existing_software$Tool[i]
         ))
     
