@@ -33,6 +33,7 @@ existing_software <- subset(existing_software, select=cnames)
 
 setnames(existing_software, cnames, names(cnames))
 
+# Adding link to GitHub (if it exists)
 existing_software[, Repo := fifelse(
     grepl("github", Repo, ignore.case = TRUE),
     sprintf(
@@ -41,6 +42,17 @@ existing_software[, Repo := fifelse(
         Repo
     ),
     ""
+)]
+
+# Creating a "ReadMore" link
+existing_software[, link_id := gsub(" ", "-", tolower(trimws(Tool)))]
+existing_software[, link_id := gsub("[^a-z0-9-]+", "-", link_id)]
+existing_software[, link_id := paste0("sec-", link_id)]
+
+existing_software[, Description := sprintf(
+    "%s<br>([Learn more...](profiles.md#%s))",
+    Description,
+    link_id
 )]
 
 dat <- existing_software[, .(
@@ -59,3 +71,18 @@ dat <- dat[, c("N", "Tool", "Description")]
 knitr::kable(dat)
 ```
 
+```{r}
+#| label: create-profiles
+#| echo: false
+cat("## Profiles\n\n", file = "profiles.md")
+for (i in 1:nrow(existing_software)) {
+    cat(
+        sprintf(
+            "# %s {#%s}\n\n",
+            existing_software$Tool[i],
+            existing_software$link_id[i]
+        ),
+        file = "profiles.md", append = TRUE)
+    cat(sprintf("%s\n\n", existing_software$Description[i]), file = "profiles.md", append = TRUE)
+}
+```
