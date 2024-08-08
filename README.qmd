@@ -26,10 +26,10 @@ cnames <- c(
     Tool = "Tool Name",
     Description = "Brief Description",
     Languages = "Languages",
-    Repo = "GitHub Repo (new or old if existing one)"
+    Repo = "GitHub Repo (new or old if existing one)",
+    Contact = "Name of developer, maintainer, or key contact",
+    Email = "Email of developer, maintainer or key contact"
 )
-
-existing_software <- subset(existing_software, select=cnames)
 
 setnames(existing_software, cnames, names(cnames))
 
@@ -74,14 +74,32 @@ knitr::kable(dat)
 ```{r}
 #| label: create-profiles
 #| echo: false
+writer <- \(x) {
+    cat(x, file = "profiles.md", append = TRUE)
+}
 cat("## Profiles\n\n", file = "profiles.md")
 for (i in 1:nrow(existing_software)) {
-    cat(
+
+    # Header
+    writer(
         sprintf(
             "# %s\n\n",
             existing_software$Tool[i]
-        ),
-        file = "profiles.md", append = TRUE)
-    cat(sprintf("%s\n\n", existing_software$Description[i]), file = "profiles.md", append = TRUE)
+        ))
+    
+    # Description
+    writer(
+        sprintf("%s\n\n", existing_software$Description[i])
+        )
+
+    # Contact
+    writer(
+        sprintf(
+            "Contact: %s (email: %s)\n\n",
+            existing_software$Contact[i],
+            existing_software$Email[i]
+        )
+    )
+
 }
 ```
