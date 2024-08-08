@@ -48,6 +48,7 @@ existing_software[, Repo := fifelse(
 existing_software[, slug := gsub(" ", "-", tolower(trimws(Tool)))]
 existing_software[, slug := gsub("[^a-z0-9-]+", "-", slug)]
 existing_software[, slug := gsub("-+", "-", slug)]
+existing_software[, slug := gsub("^-|-$", "", slug)]
 
 existing_software[, Description2 := sprintf(
     "%s<br>([Learn more...](profiles.md#%s))",
