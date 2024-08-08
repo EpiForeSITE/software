@@ -2,11 +2,16 @@
 format: gfm
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
 # Software development coordination
 
-This repo should be used for coordinating all the software development activities by the ForeSITE group. Here is an example of another project (open) where I coordinated/organized open-source dev practices: https://github.com/USCbiostats/software-dev. We can use lots of it here.
+This repository is used for coordinating all the software development activities by the ForeSITE group.
 
 # Existing software packages
+
+List of existing software packages that are being used by the ForeSITE group. This list was last updated on `r Sys.Date()`.
 
 ```{r}
 #| label: existing_software
@@ -32,7 +37,7 @@ setnames(existing_software, cnames, names(cnames))
 
 existing_software[, Repo := fifelse(
     grepl("github", Repo, ignore.case = TRUE),
-    sprintf("[(GitHub)](%s)", Repo),
+    sprintf("[<i class=\"fab fa-github\"></i>](%s)", Repo),
     ""
 )]
 
@@ -51,12 +56,4 @@ dat <- dat[, c("N", "Tool", "Description")]
 
 knitr::kable(dat)
 ```
-
-## Readibly available online
-
-- The epiworld ABM modeling packages: [epiworld](https://github.com/UofUEpiBio/epiworld), [epiworldR](https://github.com/UofUEpiBio/epiworldR), [epiworldpy](https://github.com/UofUEpiBio/epiworldpy), [epiworldRShiny](https://github.com/UofUEpiBio/epiworldRShiny).
-
-- DEDiscover https://www.dediscover.org/
-
-## Need some work
 
