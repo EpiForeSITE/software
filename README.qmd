@@ -2,8 +2,6 @@
 format: gfm
 ---
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 
 # Software development coordination
 
@@ -37,7 +35,11 @@ setnames(existing_software, cnames, names(cnames))
 
 existing_software[, Repo := fifelse(
     grepl("github", Repo, ignore.case = TRUE),
-    sprintf("[<i class=\"fab fa-github\"></i>](%s)", Repo),
+    sprintf(
+        "**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/%s)](%s)",
+        gsub(".+github\\.com/", "", Repo),
+        Repo
+    ),
     ""
 )]
 
