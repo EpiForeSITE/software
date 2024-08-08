@@ -44,22 +44,22 @@ existing_software[, Repo := fifelse(
     ""
 )]
 
-# Creating a "ReadMore" link
-existing_software[, link_id := gsub(" ", "-", tolower(trimws(Tool)))]
-existing_software[, link_id := gsub("[^a-z0-9-]+", "-", link_id)]
-existing_software[, link_id := gsub("-+", "-", link_id)]
+# Creating a slug for the link
+existing_software[, slug := gsub(" ", "-", tolower(trimws(Tool)))]
+existing_software[, slug := gsub("[^a-z0-9-]+", "-", slug)]
+existing_software[, slug := gsub("-+", "-", slug)]
 
-existing_software[, Description := sprintf(
+existing_software[, Description2 := sprintf(
     "%s<br>([Learn more...](profiles.md#%s))",
     Description,
-    link_id
+    slug
 )]
 
 dat <- existing_software[, .(
     Tool = sprintf("%s (%s)", Tool, Languages),
     Description = sprintf(
         "%s<br>%s",
-        Description,
+        Description2,
         Repo
     )
 )]
