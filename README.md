@@ -21,6 +21,19 @@ as we progress.
 
 Number of software packages by type
 
+| Language |   N |
+|:---------|----:|
+| anylogic |   2 |
+| c++      |   3 |
+| matlab   |   2 |
+| Other    |  11 |
+| python   |   5 |
+| r        |  19 |
+| sas      |   2 |
+| stata    |   2 |
+
+Number of software packages by programming language.
+
 # Existing software packages
 
 List of existing software packages that are being used by the ForeSITE

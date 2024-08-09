@@ -52,6 +52,29 @@ existing_software[, table(Type)] |>
     knitr::kable(caption = "Number of software packages by type")
 ```
 
+```{r}
+#| label: languages
+#| echo: false
+allowed_languages <- c(
+    "R", "C++", "C", "Java", "Python", "Julia", "Matlab", "JavaScript",
+    "cli", "sas", "Stata", "AnyLogic"
+    ) |> tolower()
+
+listed_languages <- existing_software[, tolower(Languages)] |>
+    strsplit(",") |>
+    unlist() |>
+    trimws() |>
+    gsub(pattern = "[.]$|and ", replacement = "")
+
+listed_languages[!listed_languages %in% allowed_languages] <- "Other"
+table(listed_languages) |>
+    as.data.table() |>
+    setnames(c("Language", "N")) |>
+    knitr::kable(
+        caption = "Number of software packages by programming language."
+    )
+```
+
 # Existing software packages
 
 List of existing software packages that are being used by the ForeSITE group. This list was last updated on `r Sys.Date()`.
