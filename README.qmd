@@ -28,7 +28,8 @@ cnames <- c(
     Languages = "Languages",
     Repo = "GitHub Repo (new or old if existing one)",
     Contact = "Name of developer, maintainer, or key contact",
-    Email = "Email of developer, maintainer or key contact"
+    Email = "Email of developer, maintainer or key contact",
+    Links = "Link to web page/documentation (optional)"
 )
 
 setnames(existing_software, cnames, names(cnames))
@@ -99,6 +100,14 @@ for (i in 1:nrow(existing_software)) {
             "Contact: %s (email: %s)\n\n",
             existing_software$Contact[i],
             existing_software$Email[i]
+        )
+    )
+
+    # Link
+    writer(
+        sprintf(
+            "Links:<br> %s\n\n",
+            existing_software$Links[i]
         )
     )
 
