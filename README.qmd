@@ -27,7 +27,8 @@ cnames <- c(
     Contact = "Name of developer, maintainer, or key contact",
     Email = "Email of developer, maintainer or key contact",
     Links = "Link to web page/documentation (optional)",
-    Type="Type of tool"
+    Type="Type of tool",
+    Diseases="Relevant disease(s)"
 )
 
 setnames(existing_software, cnames, names(cnames))
@@ -74,6 +75,7 @@ table(listed_languages) |>
         caption = "Number of software packages by programming language."
     )
 ```
+
 
 # Existing software packages
 
