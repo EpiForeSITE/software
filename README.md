@@ -5,13 +5,13 @@
 This repository is used for coordinating all the software development
 activities by the ForeSITE group.
 
-The list includes 37 tools. A complete list featuring completed and
-work-in-progress tools holds 53 entries. We will be updating this list
+The list includes 39 tools. A complete list featuring completed and
+work-in-progress tools holds 55 entries. We will be updating this list
 as we progress.
 
 |     | Type                                                      |   N |
 |:----|:----------------------------------------------------------|----:|
-| 3   | Epidemic Model - Scenario Modeling                        |  18 |
+| 3   | Epidemic Model - Scenario Modeling                        |  19 |
 | 6   | Parameter estimation                                      |  13 |
 | 4   | Epidemic Model - Scenario Modeling & Parameter estimation |   2 |
 | 1   | Decision Support tool                                     |   1 |
@@ -23,12 +23,12 @@ Number of software packages by type
 
 | Language |   N |
 |:---------|----:|
-| anylogic |   2 |
-| c++      |   3 |
-| matlab   |   2 |
-| Other    |  11 |
-| python   |   5 |
 | r        |  19 |
+| Other    |  11 |
+| python   |   7 |
+| c++      |   3 |
+| anylogic |   2 |
+| matlab   |   2 |
 | sas      |   2 |
 | stata    |   2 |
 
@@ -37,7 +37,7 @@ Number of software packages by programming language.
 # Existing software packages
 
 List of existing software packages that are being used by the ForeSITE
-group. This list was last updated on 2024-08-09.
+group. This list was last updated on 2024-08-15.
 
 | N | Tool | Description |
 |---:|:---|:---|
@@ -78,3 +78,7 @@ group. This list was last updated on 2024-08-09.
 | 35 | Multitask Model to Forecast Patient’s Next Unit and Remaining Length of Stay (Python) | Length of Stay prediction and unit transfer prediction tool. Scenarios(s) Modeled: In this multi-task learning model, we train the model to predict:Task-1: patient’s unit label in next time step. Task-2: patient’s remaining length of stay.The model inputs get updated on a daily basis and generates prediction accordingly.<br>([Learn more…](profiles.md#multitask-model-to-forecast-patient-s-next-unit-and-remaining-length-of-stay))<br>**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/madhobi/multitask_unit_and_days.png)](https://github.com/madhobi/multitask_unit_and_days) |
 | 36 | Attention-Based Models for Snow-Water Equivalent Prediction (Python) | Transformer architectures for spatio-temporal prediction (or synthetic data generation/imputation). Scenarios(s) Modeled: Predicting the SWE value for multiple SNOTEL locations in the Western US using the Attention Models<br>([Learn more…](profiles.md#attention-based-models-for-snow-water-equivalent-prediction))<br>**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/Krishuthapa/SWE-Attention.png)](https://github.com/Krishuthapa/SWE-Attention) |
 | 37 | epiworld: Fast Agent-Based Epi Models (R, C++, Python, Webessembly) | A flexible framework for Agent-Based Models (ABM), the ‘epiworldR’ package provides methods for prototyping disease outbreaks and transmission models using a ‘C++’ backend, making it very fast. It supports multiple epidemiological models, including the Susceptible-Infected-Susceptible (SIS), Susceptible-Infected-Removed (SIR), Susceptible-Exposed-Infected-Removed (SEIR), and others, involving arbitrary mitigation policies and multiple-disease models. Users can specify infectiousness/susceptibility rates as a function of agents’ features, providing great complexity for the model dynamics. Furthermore, ‘epiworldR’ is ideal for simulation studies featuring large populations.<br>([Learn more…](profiles.md#epiworld-fast-agent-based-epi-models))<br>**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/UofUEpiBio/epiworld.png)](https://github.com/UofUEpiBio/epiworld) |
+| 38 | epiworldpy: A python wrapper for epiworld (Python) | A flexible framework for Agent-Based Models (ABM), the ‘epiworldR’ package provides methods for prototyping disease outbreaks and transmission models using a ‘C++’ backend, making it very fast. It supports multiple epidemiological models, including the Susceptible-Infected-Susceptible (SIS), Susceptible-Infected-Removed (SIR), Susceptible-Exposed-Infected-Removed (SEIR), and others, involving arbitrary mitigation policies and multiple-disease models. Users can specify infectiousness/susceptibility rates as a function of agents’ features, providing great complexity for the model dynamics. Furthermore, ‘epiworldR’ is ideal for simulation studies featuring large populations.<br>([Learn more…](profiles.md#epiworldpy-a-python-wrapper-for-epiworld))<br>**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/UofUEpiBio/epiworldpy.png)](https://github.com/UofUEpiBio/epiworldpy) |
+| 39 | quadkeyr (Python) | An R package designed to create raster images from QuadKey-identified data (Microsoft Bing Maps Tile System), aiming to simplify the analysis of Facebook mobility data.<br>([Learn more…](profiles.md#quadkeyr))<br>**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/Fernandez-Lab-WSU/quadkeyr.png)](https://github.com/Fernandez-Lab-WSU/quadkeyr) |
+
+![](README_files/figure-commonmark/wordcloud-1.png)

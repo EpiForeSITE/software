@@ -71,6 +71,7 @@ listed_languages[!listed_languages %in% allowed_languages] <- "Other"
 table(listed_languages) |>
     as.data.table() |>
     setnames(c("Language", "N")) |>
+    setorder(-N) |>
     knitr::kable(
         caption = "Number of software packages by programming language."
     )
@@ -174,5 +175,46 @@ for (i in 1:nrow(existing_software)) {
     )
 
 }
+```
+
+```{r}
+#| label: wordcloud
+#| echo: false
+#| fig-dpi: 400
+#| fig-width: 8
+#| fig-height: 8
+
+tool_names <- dat$Tool
+
+# Removing the part in parentheses
+tool_names <- gsub("\\s*\\([^)]+\\)$", "", tool_names)
+
+tool_names <- strsplit(tool_names, " ")
+tool_names <- sapply(tool_names, function(tool) {
+    nletters <- nchar(tool) |> cumsum()
+    nletters <- nletters %/% 20 |> diff() 
+    tool[which(nletters == 1)] <- tool[which(nletters == 1)] |> paste0("\n")
+    paste(tool, collapse = " ")
+})
+
+plot.new()
+set.seed(331)
+
+tool_xy = list(
+    x = runif(nrow(dat), 0, 1),
+    y = runif(nrow(dat), 0, 1),
+    cex = 1.5 - runif(nrow(dat), 0, 1),
+    col = sample(colors(), nrow(dat))
+)
+
+plot.window(xlim = c(-.25, 1.25), ylim = c(-.25, 1.25))
+text(
+    x = tool_xy$x,
+    y = tool_xy$y,
+    labels = tool_names,
+    cex = tool_xy$cex,
+    col = tool_xy$col,
+    font = 2,
+)
 ```
 
