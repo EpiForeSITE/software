@@ -17,6 +17,7 @@ GitHub Docs explain the reason as follows:
 > Pinning an action to a full length commit SHA is currently the only way to use an action as an immutable release.
 > Pinning to a particular SHA helps mitigate the risk of a bad actor adding a backdoor to the action's repository, as they would need to generate a SHA-1 collision for a valid Git object payload. 
 > When selecting a SHA, you should verify it is from the action's repository and not a repository fork.
+
 For example, use
 ```
 steps:
@@ -33,8 +34,10 @@ For more information see [Using third-party actions](https://docs.github.com/en/
 
 ### Artifact attestation
 GitHub Docs describe [artifact attestation](https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds) as follows:
+
 > Artifact attestations enable you to create unfalsifiable provenance and integrity guarantees for the software you build. 
 > In turn, people who consume your software can verify where and how your software was built.
+
 If your workflow generates an artifact that will only be used internally (e.g., by the workflow itself), then attestation isn't necessary. 
 But if your workflow outputs will be used by others, you should include artifact attestation (e.g., with [`actions/attest-build-provenance`](https://github.com/actions/attest-build-provenance))
 
