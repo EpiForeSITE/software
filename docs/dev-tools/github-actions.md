@@ -1,19 +1,16 @@
 # GitHub Actions
 
-Information on building and running GitHub Actions (GHA).
-TODO: Link General Documentation
-TODO: Link Workflow Syntax (cheatsheet)
+Information on building and running GitHub Actions.
 
-## Configuring Project's GHA Settings
-TODO: What needs to be done here
+## Resources
+- [GitHub Actions documentation](https://docs.github.com/en/actions)
+- [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
 
-## Suggestions
-
-### Security Practices
+## Suggested Security Practices
 See [Security hardening for GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) for good security practices when using GitHub Actions.
 Below we highlight specific practices that can be easily overlooked.
 
-#### Using full length commit SHA
+### Using full length commit SHA
 When using a third-party GitHub Action (such as any of those described in [Supporting Actions](#supporting-actions) below), pin the action to a full length commit SHA.
 
 GitHub Docs explain the reason as follows:
@@ -34,14 +31,14 @@ steps:
 ```
 For more information see [Using third-party actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions#using-third-party-actions).
 
-#### Artifact attestation
+### Artifact attestation
 GitHub Docs describe [artifact attestation](https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds) as follows:
 > Artifact attestations enable you to create unfalsifiable provenance and integrity guarantees for the software you build. 
 > In turn, people who consume your software can verify where and how your software was built.
 If your workflow generates an artifact that will only be used internally (e.g., by the workflow itself), then attestation isn't necessary. 
 But if your workflow outputs will be used by others, you should include artifact attestation (e.g., with [`actions/attest-build-provenance`](https://github.com/actions/attest-build-provenance))
 
-## Examples
+## Github Actions Examples
 
 ### Supporting Actions
 These can be included in your workflow file to execute certain tasks, rather than building them from scratch.
