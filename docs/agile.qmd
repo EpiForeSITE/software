@@ -40,3 +40,13 @@ We will use the following tools:
 - GitHub repositories for code management.
 - GitHub issues for tracking tasks.
 - Sprints will be organized using milestones in GitHub.
+
+### Sprint planning
+
+1. Use the first 15 minutes of the sprint planning meeting to review the previous sprint.
+
+2. Use about 10 minutes to discuss the goals for the upcoming sprint.
+
+3. Write up the goals (as issues) in a new milestone for the sprint.
+
+4. Assign issues to team members.
