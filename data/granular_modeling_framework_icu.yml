@@ -1,0 +1,36 @@
+tool_name: Granular Modeling Framework/ICU
+brief_description: 'Implement 2 ICUs that match the CVICU at the University of Utah
+  and the ICU at the Salt Lake City VA.  Model all empirical data collected by the
+  GM project:  HCW movement and touch data as collected by the proximity sensors,
+  Patient flow from the EHR, and micro data as sampled by the GM micro team.  Scenarios(s)
+  Modeled: Sustained endemic HAI levels driven by importation into a 15-25 bed ICU.  Contamination
+  and transmission via HCW movement and contact behaviors.  The simulation includes
+  contamination of multiple surfaces in several room zones, contamination of patient
+  surfaces via shedding and HCW surfaces via touching.  Room cleaning, isolation,
+  and targeted treatment of HAI.  HCW visits include assigned networks between health
+  care workers and patients as well as ad hoc visits.'
+name_of_developer_maintainer_or_key_contact: Willy Ray
+email_of_developer_maintainer_or_key_contact: william.ray@hcs.utah.edu
+is_it_actively_maintained_yes_no: 'Yes'
+relevant_disease_s: Only C.Diff currently implemented, but all organisms sampled in
+  the GM project were targeted.
+maturity: The framework is developed in Java/Groovy in the Repast Simphony toolset.  It
+  is intended to be useable to quickly model fresh scenarios relatively quickly.  In
+  practice, it is currently only useable by Willy.  Willy is able to use it to develop
+  new models and features in existing models fairly quickly, but no-one else will
+  be able to do that at this point.  The GM model and the underlying framework are
+  hosted on github, but updates on the remote are far behind the commits that have
+  been made by the developer.  The GM model itself if hung up on parameter estimation.
+license: TBD
+languages: Java/Groovy
+audience_type: TBD
+required_expertise_to_use_tool: TBD
+type_of_tool: Epidemic Model - Scenario Modeling
+type_of_data_input_needed: .na.character
+link_to_web_page_documentation_optional: .na.character
+link_to_source_code_optional: .na.character
+reviewer: George
+github_repo_new_or_old_if_existing_one: .na.character
+complete_yes_no: .na.character
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character

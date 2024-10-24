@@ -1,0 +1,26 @@
+tool_name: Post-acute care model
+brief_description: A basic model to plan for the post-acute care needs following a
+  hospital surge
+name_of_developer_maintainer_or_key_contact: Lindsay Keegan
+email_of_developer_maintainer_or_key_contact: Lindsay.Keegan@utah.edu
+is_it_actively_maintained_yes_no: 'No'
+relevant_disease_s: SARS-CoV-2
+maturity: https://github.com/mattrmaloney/covid-post-acute-care
+license: TBD
+languages: R
+audience_type: Healthcare practitioners
+required_expertise_to_use_tool: TBD
+type_of_tool: Epidemic Model - Scenario Modeling
+type_of_data_input_needed: Based on post-discharge needs of UHealth patients, takes
+  the output from a scenario model (hospitalizations/ICU beds needed) and projects
+  care needs
+link_to_web_page_documentation_optional: https://www.medrxiv.org/content/10.1101/2020.06.12.20129551v1
+link_to_source_code_optional: .na.character
+reviewer: George
+github_repo_new_or_old_if_existing_one: https://github.com/mattrmaloney/covid-post-acute-care
+complete_yes_no: 'yes'
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: The repo looks neat.
+  I think packaging the functions should be straight forward.
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Easy
+  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
+  file.

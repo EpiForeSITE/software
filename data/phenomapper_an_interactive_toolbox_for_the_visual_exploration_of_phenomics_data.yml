@@ -1,0 +1,29 @@
+tool_name: 'PhenoMapper: an interactive toolbox for the visual exploration of phenomics
+  data'
+brief_description: 'TDA tool that can possibly help us to view some trajectory data.
+  Scenarios(s) Modeled: We demonstrate the utility of this new tool on real-world
+  plant (e.g., maize) phenomics datasets.'
+name_of_developer_maintainer_or_key_contact: Ananth Kalyanaraman
+email_of_developer_maintainer_or_key_contact: ananth@wsu.edu
+is_it_actively_maintained_yes_no: 'Yes'
+relevant_disease_s: View trajectory data
+maturity:   Software page: https://github.com/tdavislab/PhenoMapper
+license: TBD
+languages: PhenoMapper extension
+audience_type: TBD
+required_expertise_to_use_tool: TBD
+type_of_tool: Epidemic Model - Scenario Modeling
+type_of_data_input_needed: PhenoMapper is an extension of Mapper Interactive, which
+  is a web-based framework for interactive analysis and visualization of high-dimensional
+  point cloud data built upon the mapper algorithm.Our approach uses the mapper framework
+  to perform a topological analysis of the data, and subsequently render visual representations
+  with built-in data analysis and machine learning capabilities.
+link_to_web_page_documentation_optional: https://dl.acm.org/doi/abs/10.1145/3459930.3469511
+link_to_source_code_optional:   Software page: https://github.com/tdavislab/PhenoMapper
+reviewer: George
+github_repo_new_or_old_if_existing_one: https://github.com/tdavislab/PhenoMapper
+complete_yes_no: 'Yes'
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: This extends another
+  library, not sure if we should be putting effort here.
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Unsure
+  - Needs group thinking
