@@ -10,25 +10,29 @@ This repository is used for coordinating all the software development activities
 ```{r}
 #| label: load-data
 #| echo: false
-library(readxl)
+library(yaml)
 library(data.table)
 
-existing_software <- read_excel(
-    path = "data/box/ForeSITE_Tools surveyV2_ Tool D&I only.xlsx",
-    skip = 2
-    ) |> as.data.table()
+existing_software <- list.files(
+    "data", pattern = "ya?ml$", full.names = TRUE
+    ) |> 
+    lapply(FUN = yaml.load_file, as.named.list = TRUE) |>
+    lapply(as.data.table) |>
+    rbindlist()
+
+writexl::write_xlsx(x = existing_software, path="data/software.xlsx")
 
 # Renaming relevant columns
 cnames <- c(
-    Tool = "Tool Name",
-    Description = "Brief Description",
-    Languages = "Languages",
-    Repo = "GitHub Repo (new or old if existing one)",
-    Contact = "Name of developer, maintainer, or key contact",
-    Email = "Email of developer, maintainer or key contact",
-    Links = "Link to web page/documentation (optional)",
-    Type="Type of tool",
-    Diseases="Relevant disease(s)"
+    Tool = "tool_name",
+    Description = "brief_description",
+    Languages = "languages",
+    Repo = "github_repo_new_or_old_if_existing_one",
+    Contact = "name_of_developer_maintainer_or_key_contact",
+    Email = "email_of_developer_maintainer_or_key_contact",
+    Links = "link_to_web_page_documentation_optional",
+    Type="type_of_tool",
+    Diseases="relevant_disease_s"
 )
 
 setnames(existing_software, cnames, names(cnames))
