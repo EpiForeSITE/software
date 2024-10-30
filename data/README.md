@@ -1,7 +1,33 @@
 # List of existing software
 
-This folder holds information about existing software developed by the ForeSITE group. To add a new software, please create a new yaml file (either copying one of the existing ones or using the template below) and add it to the list below. Executing the [../README.qmd](../README.qmd) quarto file will automatically update the list of software included in the README.md at the root level of the repository and update the `software.xlsx` file included in this folder.
+This folder holds information about existing software developed by the ForeSITE group. To add a new software, please create a new yaml file (template below) and add it to the list. Executing the [../README.qmd](../README.qmd) quarto file will automatically update the list of software included in the README.md at the root level of the repository and update the `software.xlsx` file included in this folder.
 
+## YAML Template
+Fill in the template fields with your project's information.
+```yaml
+tool_name: 
+brief_description:
+name_of_developer_maintainer_or_key_contact:
+email_of_developer_maintainer_or_key_contact:
+is_it_actively_maintained_yes_no:
+relevant_disease_s:
+maturity: 
+license: 
+languages:
+audience_type:
+required_expertise_to_use_tool:
+type_of_tool:
+type_of_data_input_needed:
+link_to_web_page_documentation_optional:
+link_to_source_code_optional:
+reviewer:
+github_repo_new_or_old_if_existing_one:
+complete_yes_no:
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes:
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project:
+```
+
+## Example Project YAML File 
 ```yaml
 tool_name: 'epiworld: Fast Agent-Based Epi Models'
 brief_description: A flexible framework for Agent-Based Models (ABM), the 'epiworldR'
