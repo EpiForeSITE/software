@@ -1,8 +1,5 @@
 tool_name: 'GeoCovid'
-brief_description: |
-  Shiny App for visualizing mobility data and COVID-19 cases in Buenos Aires province during March to December 2020.
-
-  Shiny App para visualizar datos de movilidad ciudadana y casos de COVID-19 en provincia de Buenos Aires durante el periodo de marzo a diciembre de 2020
+brief_description: Shiny App for visualizing mobility data and COVID-19 cases in Buenos Aires province during March to December 2020.
 name_of_developer_maintainer_or_key_contact: Maria del Pilar Fernandez
 email_of_developer_maintainer_or_key_contact: pilar.fernandez@wsu.edu
 is_it_actively_maintained_yes_no: 'Yes'

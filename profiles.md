@@ -134,9 +134,6 @@ Links:<br> https://github.com/UofUEpiBio/epiworldpy
 
 Shiny App for visualizing mobility data and COVID-19 cases in Buenos Aires province during March to December 2020.
 
-Shiny App para visualizar datos de movilidad ciudadana y casos de COVID-19 en provincia de Buenos Aires durante el periodo de marzo a diciembre de 2020
-
-
 Contact: Maria del Pilar Fernandez (email: pilar.fernandez@wsu.edu)
 
 Links:<br> https://github.com/Fernandez-Lab-WSU/geocovid_app, https://github.com/Fernandez-Lab-WSU/geocovid_bsas, https://fernandez-lab-wsu.github.io/geocovid-slides/slides.html#/geocovidar
