@@ -1,0 +1,32 @@
+tool_name: COVID-19 Jail Model
+brief_description: 'Deterministic model of a stylized jail, with a number of potential
+  interventions developed in collaboration with the ACLU. Scenarios(s) Modeled: Decarceration,
+  social distancing, targeted or widespread arrest reduction, isolation.'
+name_of_developer_maintainer_or_key_contact: Eric Lofgren
+email_of_developer_maintainer_or_key_contact: Eric.Lofgren@wsu.edu
+is_it_actively_maintained_yes_no: 'Yes'
+relevant_disease_s: COVID-19. Likely easily adaptable to other respiratory pathogens.
+maturity: Code is available on R, and currently runs very cleanly thanks to some data
+  scientists who know modern R programming techniques. Adaptation to a dashboard type
+  system seems like it should be straightforward. Stochastic implementation will take
+  work.
+license: TBD
+languages: R
+audience_type: TBD
+required_expertise_to_use_tool: TBD
+type_of_tool: Epidemic Model - Scenario Modeling
+type_of_data_input_needed: This model was developed as part of a project for the ACLU
+  to estimate the impact of COVID-19 on jails, as well as estimate the effect of interventions
+  believed to be feasible both from the ACLU’s standpoint and likely local criminal
+  justice groups. It’s for a single jail and the surrounding county within that jail
+  is located.
+link_to_web_page_documentation_optional: https://journals.lww.com/epidem/fulltext/2022/07000/carceral_amplification_of_covid_19__impacts_for.6.aspx
+link_to_source_code_optional: .na.character
+reviewer: George
+github_repo_new_or_old_if_existing_one: https://github.com/epimodels/COVID19-Jails
+complete_yes_no: 'yes'
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: It looks fairly complex,
+  but the functions are isolated enough to be packaged out.
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Easy
+  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
+  file.

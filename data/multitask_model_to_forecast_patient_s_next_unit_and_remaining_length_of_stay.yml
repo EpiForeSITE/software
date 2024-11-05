@@ -1,0 +1,32 @@
+tool_name: Multitask Model to Forecast Patient's Next Unit and Remaining Length of
+  Stay
+brief_description: 'Length of Stay prediction and unit transfer prediction tool. Scenarios(s)
+  Modeled: In this multi-task learning model, we train the model to predict:Task-1:
+  patient''s unit label in next time step. Task-2: patient''s remaining length of
+  stay.The model inputs get updated on a daily basis and generates prediction accordingly.'
+name_of_developer_maintainer_or_key_contact: Ananth Kalyanaraman
+email_of_developer_maintainer_or_key_contact: ananth@wsu.edu
+is_it_actively_maintained_yes_no: 'Yes'
+relevant_disease_s: Any hospital admission
+maturity: Software page: https://github.com/madhobi/multitask_unit_and_days
+license: TBD
+languages: Python
+audience_type: TBD
+required_expertise_to_use_tool: TBD
+type_of_tool: Epidemic Model - Scenario Modeling
+type_of_data_input_needed: This is the source code for building a deep learning model
+  using multi-task learning (MTL) approach. The model is designed to train and validate
+  on data prepared from Electronic Health Records (EHRs). The model was designed to
+  learn and predict adaptively along the patient's stay. The model appends new data
+  about the patient as it becomes available and update the prediction value accordingly.
+link_to_web_page_documentation_optional: Preprint ready by June
+link_to_source_code_optional: .na.character
+reviewer: George
+github_repo_new_or_old_if_existing_one: https://github.com/madhobi/multitask_unit_and_days
+complete_yes_no: 'Yes'
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: "Has a handful of functions
+  (3) well-defined. This could be a small python package.\r\n\r\nFunctions for paper
+  figures can be set aside."
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Easy
+  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
+  file.

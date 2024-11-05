@@ -1,0 +1,44 @@
+tool_name: Healthcare facility network outbreak simulator
+brief_description: 'Provides flexible framework for agent-based simulation of outbreaks
+  among in-patients in a generic-but-realistic network of short/long-stay hospitals
+  and nursing homes, as well as interventions to mitigate transmission and inter-facility
+  spread. Scenarios(s) Modeled:  Initial invasion of new pathogen / strain and/or
+  endemic pathogens. Intervention scenarios for patient-targeted efforts including
+  surveillance and isolation (contact precautions), vaccination, and anti-microbial
+  drug treatment.'
+name_of_developer_maintainer_or_key_contact: Damon Toth
+email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
+is_it_actively_maintained_yes_no: 'No'
+relevant_disease_s: Any healthcare-associated pathogen(s); we have applied the model
+  to carbapenem-resistant Enterobacteriaceae, C. difficile, and MRSA.
+maturity: Written in Anylogic, a Java-based simulation software that is not free or
+  publicly available. Code must be run on old machines that still have the software.
+  Effort was made to convert the model to publicly available software Repast (by Willy
+  Ray) but was not completed.
+license: TBD
+languages: Anylogic
+audience_type: TBD
+required_expertise_to_use_tool: TBD
+type_of_tool: Epidemic Model - Scenario Modeling
+type_of_data_input_needed: Local network of hospitals and nursing homes that directly
+  exchange patients, as well as generic “community” component to track discharged
+  / readmitted patients after and between hospital stays.
+link_to_web_page_documentation_optional: '1-Slayton R, Toth D, Lee B, Tanner W, Bartsch
+  S, Khader K, Wong K, Brown K, McKinnell J, Ray W, Miller L, Rubin M, Kim D, Adler
+  F, Cao C, Avery L, Stone N, Kallen A, Samore M, Huang S, Fridkin S, Jernigan J (2015).
+  Vital Signs: estimated effects of a coordinated approach for action to reduce antibiotic-resistant
+  infections in health care facilities - United States. MMWR Morb Mortal Wkly Rep,
+  64(30), 826-831. https://doi.org/10.1111/ajt.13555. 2-Toth D, Khader K, Slayton
+  R, Kallen A, Gundlapalli A, O''Hagan J, Fiore A, Rubin M, Jernigan J, Samore M (2017).
+  The potential for interventions in a long-term acute care hospital to reduce transmission
+  of carbapenem-resistant Enterobacteriaceae in affiliated healthcare facilities.
+  Clin Infect Dis, 65(4), 581-587. https://doi.org/10.1093/cid/cix370., 3-Toth D,
+  Keegan L, Samore M, Khader K, O''Hagan J, Yu H, Quintana A, Swerdlow D (2020). Modeling
+  the potential impact of administering vaccines against Clostridioides difficile
+  infection to individuals in healthcare facilities. Vaccine, 38(37), 5927-5932. https://doi.org/10.1016/j.vaccine.2020.06.081.'
+link_to_source_code_optional: .na.character
+reviewer: George
+github_repo_new_or_old_if_existing_one: .na.character
+complete_yes_no: .na.character
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
