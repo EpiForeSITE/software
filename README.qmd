@@ -10,6 +10,7 @@ This repository is used for coordinating all the software development activities
 ```{r}
 #| label: load-data
 #| echo: false
+#| warning: false
 library(yaml)
 library(data.table)
 
