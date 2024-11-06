@@ -21,5 +21,4 @@ input_type: This model was developed as part of a project for the ACLU
   justice groups. It’s for a single jail and the surrounding county within that jail
   is located.
 docs_link: https://journals.lww.com/epidem/fulltext/2022/07000/carceral_amplification_of_covid_19__impacts_for.6.aspx
-source_link: .na.character
 github_link: https://github.com/epimodels/COVID19-Jails

@@ -13,5 +13,4 @@ tool_type: Epidemic Model - Forecasting
 input_type: 'The objective of this study is to use multiple time series
   data to predict weekly infection counts for mutiple virus. Timeframe: 12/2002-01/2024'
 docs_link: no pubication plan
-source_link: .na.character
 github_link: .na.character

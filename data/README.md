@@ -19,8 +19,7 @@ required_expertise:
 tool_type:
 input_type:
 docs_link:
-source_link:
-github_link: <DELETE> (but first combine with source link, if possible)
+github_link:
 ```
 
 ## Example Project YAML File 
@@ -48,7 +47,6 @@ tool_type: Epidemic Model - Scenario Modeling
 input_type: Parameter inputs for simulating the model
 docs_link: https://github.com/UofUEpiBio/epiworld, https://github.com/UofUEpiBio/epiworldR/,
   https://github.com/UofUEpiBio/epiworldpy, https://github.com/UofUEpiBio/epiworldRShiny
-source_link: .na.character
 github_link: https://github.com/UofUEpiBio/epiworld
 ```
 

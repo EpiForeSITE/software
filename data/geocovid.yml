@@ -12,5 +12,4 @@ required_expertise: .na.character
 tool_type: .na.character
 input_type: .na.character
 docs_link: https://github.com/Fernandez-Lab-WSU/geocovid_app, https://github.com/Fernandez-Lab-WSU/geocovid_bsas, https://fernandez-lab-wsu.github.io/geocovid-slides/slides.html#/geocovidar
-source_link: https://github.com/Fernandez-Lab-WSU/geocovid_app
 github_link: https://github.com/Fernandez-Lab-WSU/geocovid_app

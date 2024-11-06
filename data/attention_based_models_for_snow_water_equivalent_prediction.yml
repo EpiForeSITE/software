@@ -16,5 +16,4 @@ tool_type: Epidemic Model - Scenario Modeling
 input_type: SWE values vary spatiotemporally—affected by weather, topography,
   and other environmental factors.
 docs_link: https://ojs.aaai.org/index.php/AAAI/article/view/30337
-source_link: .na.character
 github_link: https://github.com/Krishuthapa/SWE-Attention

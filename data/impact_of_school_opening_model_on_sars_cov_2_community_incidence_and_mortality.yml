@@ -18,5 +18,4 @@ input_type: The statistical model was developed using data on school
   mode from Burbio, SARS-CoV-2 and mortality rates from CDC, and mobility data from
   Google.
 docs_link: https://www.nature.com/articles/s41591-021-01563-8
-source_link: .na.character
 github_link: .na.character

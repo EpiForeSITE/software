@@ -21,5 +21,4 @@ tool_type: Epidemic Model - Scenario Modeling & Parameter estimation
 input_type: Low prevalence populations (general pop), high-risk populations
   (high prevalence pops)
 docs_link: 1-https://doi.org/10.1086/429299  2-https://doi.org/10.4161/hv.4529
-source_link: .na.character
 github_link: .na.character

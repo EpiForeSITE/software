@@ -42,5 +42,4 @@ docs_link: "1.Khader K, Thomas A, Stevens V, Visnovsky
   Open Forum Infect Dis.\r\n7.Thomas A, Redd A, Khader K, Leecaster M, Greene T, Samore
   M (2015). Efficient parameter estimation for models of healthcare-associated pathogen
   transmission in discrete and continuous time. Math Med Biol, 32(1), 79-98."
-source_link: .na.character
 github_link: https://github.com/EpiForeSITE/bayesian-transmission

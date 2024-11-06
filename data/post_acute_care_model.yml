@@ -15,5 +15,4 @@ input_type: Based on post-discharge needs of UHealth patients, takes
   the output from a scenario model (hospitalizations/ICU beds needed) and projects
   care needs
 docs_link: https://www.medrxiv.org/content/10.1101/2020.06.12.20129551v1
-source_link: .na.character
 github_link: https://github.com/mattrmaloney/covid-post-acute-care

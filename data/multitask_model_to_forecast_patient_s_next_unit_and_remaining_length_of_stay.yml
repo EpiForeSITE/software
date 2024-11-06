@@ -20,5 +20,4 @@ input_type: This is the source code for building a deep learning model
   learn and predict adaptively along the patient's stay. The model appends new data
   about the patient as it becomes available and update the prediction value accordingly.
 docs_link: Preprint ready by June
-source_link: .na.character
 github_link: https://github.com/madhobi/multitask_unit_and_days

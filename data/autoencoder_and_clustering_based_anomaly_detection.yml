@@ -25,5 +25,4 @@ input_type: Uses VA CDW data including Emergency Department visits,
   Python technology stacks.  Autoencoder models trained with PyTorch, and clustering
   is performed with HDBScan.
 docs_link: Nothing published.
-source_link: .na.character
 github_link: .na.character

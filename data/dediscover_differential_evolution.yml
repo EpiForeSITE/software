@@ -13,5 +13,4 @@ required_expertise: TBD
 tool_type: Parameter estimation 
 input_type: Enter model, simulation data, experimental data, etc
 docs_link: https://www.dediscover.org/
-source_link: .na.character
 github_link: .na.character

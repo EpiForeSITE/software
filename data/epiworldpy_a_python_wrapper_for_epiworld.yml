@@ -21,5 +21,4 @@ required_expertise: TBD
 tool_type: Epidemic Model - Scenario Modeling
 input_type: Parameter inputs for simulating the model
 docs_link: https://github.com/UofUEpiBio/epiworldpy
-source_link: .na.character
 github_link: https://github.com/UofUEpiBio/epiworldpy
