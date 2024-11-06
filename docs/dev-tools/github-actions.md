@@ -5,6 +5,7 @@ Information on building and running GitHub Actions.
 ## Resources
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions)
+- [Skipping workflow runs with commit messages](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/skipping-workflow-runs)
 
 ## Suggested Security Practices
 See [Security hardening for GitHub Actions](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) for good security practices when using GitHub Actions.
