@@ -17,8 +17,4 @@ tool_type: Parameter estimation 
 input_type: NA
 docs_link: This tutorial is not designed to be published.
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

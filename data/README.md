@@ -20,11 +20,7 @@ tool_type:
 input_type:
 docs_link:
 source_link:
-reviewer:
-github_link:
-is_complete:
-pkg_dev_assessment:
-overall_assessment:
+github_link: <DELETE> (but first combine with source link, if possible)
 ```
 
 ## Example Project YAML File 
@@ -53,10 +49,6 @@ input_type: Parameter inputs for simulating the model
 docs_link: https://github.com/UofUEpiBio/epiworld, https://github.com/UofUEpiBio/epiworldR/,
   https://github.com/UofUEpiBio/epiworldpy, https://github.com/UofUEpiBio/epiworldRShiny
 source_link: .na.character
-reviewer: .na.character
 github_link: https://github.com/UofUEpiBio/epiworld
-is_complete: 'yes'
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character
 ```
 

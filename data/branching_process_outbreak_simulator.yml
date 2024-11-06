@@ -27,12 +27,4 @@ docs_link: "1-Toth D, Gundlapalli A, Khader K, Pettey
   of Middle East respiratory syndrome after importations outside the Arabian Peninsula.
   Epidemics, 16, 27-32. https://doi.org/10.1016/j.epidem.2016.04.002"
 source_link: .na.character
-reviewer: George
 github_link: https://github.com/EpiForeSITE/branching_process/
-is_complete: 'yes'
-pkg_dev_assessment: All code is functions
-  only. It could be bundled into an R pkg very easily. We only need to have an example
-  so it is more complete.
-overall_assessment: Easy
-  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
-  file.

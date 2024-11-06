@@ -18,12 +18,4 @@ input_type: A campus and visitors. Currently no representation of the
   sporting events would be straightforward modifications.
 docs_link: https://www.mdpi.com/1660-4601/18/16/8260
 source_link: .na.character
-reviewer: George
 github_link: https://github.com/epimodels/inperson_sports
-is_complete: 'yes'
-pkg_dev_assessment: No clear idea of the
-  code structure. It has well defined functions and classes, but it mixes python and
-  R.
-overall_assessment: Needs
-  some work - Functions/classes are mixed with the code. Need to separate them and
-  add them to namespace/__init__.py file.

@@ -29,8 +29,4 @@ docs_link: The way that we implement this system has
   not been published, but there are links for “surveillance” (https://cran.r-project.org/web/packages/surveillance/index.html)and
   “epysurv” packages (https://epysurv.readthedocs.io/en/latest/).
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

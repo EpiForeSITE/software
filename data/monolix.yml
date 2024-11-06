@@ -19,8 +19,4 @@ tool_type: Parameter estimation 
 input_type: Dataset
 docs_link: https://monolix.lixoft.com/
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

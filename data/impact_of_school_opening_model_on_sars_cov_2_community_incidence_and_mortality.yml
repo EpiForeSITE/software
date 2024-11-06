@@ -19,9 +19,4 @@ input_type: The statistical model was developed using data on school
   Google.
 docs_link: https://www.nature.com/articles/s41591-021-01563-8
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: Leave
-  for later - Too complex to address | No functional programming whatsoever

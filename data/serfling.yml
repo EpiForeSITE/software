@@ -16,8 +16,4 @@ tool_type: Parameter estimation 
 input_type: Scale is flexible.
 docs_link: https://link.springer.com/chapter/10.1007/978-3-540-72608-1_11
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

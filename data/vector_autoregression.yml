@@ -16,10 +16,4 @@ input_type: 'The objective of this study is to use multiple time series
   inpatient setting. Timeframe: 02/2007-03/2020'
 docs_link: Not published but will
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: Nothing to do but publish
-  analysis files.  Yue will publish those
-overall_assessment: Unsure
-  - Needs group thinking

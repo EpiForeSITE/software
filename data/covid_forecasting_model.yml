@@ -14,8 +14,4 @@ input_type: 'Developed for Utah to compare % positivity and wastewater
   as potentially useful data streams for forecasting. Timeframe: 0-21 days'
 docs_link: Not published but will
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

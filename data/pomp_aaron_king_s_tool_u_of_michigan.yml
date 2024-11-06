@@ -14,10 +14,4 @@ tool_type: Epidemic Model - Scenario Modeling
 input_type: SIR type epi models, Markov processes (partially observed)
 docs_link: Unknown
 source_link: .na.character
-reviewer: George
 github_link: https://github.com/kingaa/pomp
-is_complete: 'yes'
-pkg_dev_assessment: This package is already
-  on CRAN. Not sure what we can do with it.
-overall_assessment: Unsure
-  - Needs group thinking

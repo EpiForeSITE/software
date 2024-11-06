@@ -29,8 +29,4 @@ docs_link: 'Under the following existing papers from
   others: 1-https://www.medrxiv.org/content/10.1101/2020.04.18.20070821v3.full.pdf ,
   2-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008994 '
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

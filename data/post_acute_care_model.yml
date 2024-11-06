@@ -16,11 +16,4 @@ input_type: Based on post-discharge needs of UHealth patients, takes
   care needs
 docs_link: https://www.medrxiv.org/content/10.1101/2020.06.12.20129551v1
 source_link: .na.character
-reviewer: George
 github_link: https://github.com/mattrmaloney/covid-post-acute-care
-is_complete: 'yes'
-pkg_dev_assessment: The repo looks neat.
-  I think packaging the functions should be straight forward.
-overall_assessment: Easy
-  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
-  file.

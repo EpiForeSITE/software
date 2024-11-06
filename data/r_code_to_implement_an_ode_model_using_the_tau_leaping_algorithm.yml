@@ -14,8 +14,4 @@ tool_type: Parameter estimation 
 input_type: .na.character
 docs_link: The R code is developed, but not documented.
 source_link: .na.character
-reviewer: George
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

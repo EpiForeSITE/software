@@ -26,8 +26,4 @@ input_type: Uses VA CDW data including Emergency Department visits,
   is performed with HDBScan.
 docs_link: Nothing published.
 source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

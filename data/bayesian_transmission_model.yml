@@ -43,10 +43,4 @@ docs_link: "1.Khader K, Thomas A, Stevens V, Visnovsky
   M (2015). Efficient parameter estimation for models of healthcare-associated pathogen
   transmission in discrete and continuous time. Math Med Biol, 32(1), 79-98."
 source_link: .na.character
-reviewer: George
 github_link: https://github.com/EpiForeSITE/bayesian-transmission
-is_complete: 'yes'
-pkg_dev_assessment: A large C++ program.
-  Probably easy to write a cmd line wrapper within R. We could also use Rcpp11.
-overall_assessment: Leave
-  for later - Too complex to address | No functional programming whatsoever

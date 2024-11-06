@@ -22,11 +22,4 @@ input_type: This model was developed as part of a project for the ACLU
   is located.
 docs_link: https://journals.lww.com/epidem/fulltext/2022/07000/carceral_amplification_of_covid_19__impacts_for.6.aspx
 source_link: .na.character
-reviewer: George
 github_link: https://github.com/epimodels/COVID19-Jails
-is_complete: 'yes'
-pkg_dev_assessment: It looks fairly complex,
-  but the functions are isolated enough to be packaged out.
-overall_assessment: Easy
-  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
-  file.
