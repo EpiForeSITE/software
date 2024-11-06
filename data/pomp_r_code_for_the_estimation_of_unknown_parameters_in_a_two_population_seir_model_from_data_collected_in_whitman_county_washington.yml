@@ -22,9 +22,4 @@ input_type: This model was developed to model COVID-19 in Whitman County,
 docs_link: The manuscript is currently available as
   a preprint https://www.medrxiv.org/content/10.1101/2024.01.10.24301116v1.full.pdf
   and submitted to the journal Epidemics.
-source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

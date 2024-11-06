@@ -18,12 +18,4 @@ input_type: This is the main “workhorse” model for modeling ICUs in
   my lab. It currently isn’t connected to hospital or community-level models.
 docs_link: 'Published: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010352
   for the canonical reference'
-source_link: .na.character
-reviewer: George
 github_link: https://github.com/epimodels/Metapopulation_MRSA
-is_complete: 'yes'
-pkg_dev_assessment: Some mix of R and python
-  code. Python functions (which run the analysis) are mostly isolated.
-overall_assessment: Needs
-  some work - Functions/classes are mixed with the code. Need to separate them and
-  add them to namespace/__init__.py file.

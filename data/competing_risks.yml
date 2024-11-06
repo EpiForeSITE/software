@@ -15,9 +15,4 @@ required_expertise: TBD
 tool_type: Parameter estimation 
 input_type: Generic regression model.
 docs_link: https://journals.lww.com/epidem/fulltext/2014/07000/hospital_acquired_clostridium_difficile.15.aspx
-source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

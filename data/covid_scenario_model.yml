@@ -16,12 +16,4 @@ required_expertise: TBD
 tool_type: Epidemic Model - Scenario Modeling
 input_type: county level, can include as many states as desired
 docs_link: https://www.nature.com/articles/s41598-021-86811-0
-source_link: .na.character
-reviewer: George
 github_link: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-is_complete: 'yes'
-pkg_dev_assessment: It is a collection of
-  packages building a pipeline. Already in container form, maybe could be used to
-  build as a package.
-overall_assessment: Leave
-  for later - Too complex to address | No functional programming whatsoever

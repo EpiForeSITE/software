@@ -16,14 +16,4 @@ tool_type: Epidemic Model - Scenario Modeling
 input_type: SWE values vary spatiotemporally—affected by weather, topography,
   and other environmental factors.
 docs_link: https://ojs.aaai.org/index.php/AAAI/article/view/30337
-source_link: .na.character
-reviewer: George
 github_link: https://github.com/Krishuthapa/SWE-Attention
-is_complete: 'yes'
-pkg_dev_assessment: "Potentially a python
-  module. There are functions and classes that are well-defined. Maybe exporting the
-  classes should be enough.\r\n\r\nBut it also has hardcoded stuff in the class def
-  files."
-overall_assessment: Needs
-  some work - Functions/classes are mixed with the code. Need to separate them and
-  add them to namespace/__init__.py file.

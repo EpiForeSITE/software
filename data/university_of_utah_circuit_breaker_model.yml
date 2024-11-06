@@ -13,9 +13,4 @@ required_expertise: TBD
 tool_type: Epidemic Model - Scenario Modeling
 input_type: University of Utah
 docs_link: 'No'
-source_link: .na.character
-reviewer: George
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

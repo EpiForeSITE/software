@@ -22,9 +22,4 @@ input_type: Data sources for this include both inpatient and outpatient
   we have used are based on algorithm defaults. Additionally, ‘Nobbs’ nowcasting package
   in R was used to address delays in death reporting before applying Flexible Farrington.
 docs_link: Not currently published.
-source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

@@ -19,9 +19,4 @@ required_expertise: TBD
 tool_type: Epidemic Model - Scenario Modeling
 input_type: Single facility or small network of facilities
 docs_link: Pending
-source_link: .na.character
-reviewer: George
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: Asked for the code
-overall_assessment: .na.character

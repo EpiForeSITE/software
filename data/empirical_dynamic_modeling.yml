@@ -15,9 +15,4 @@ input_type: 'The objective of this study is to use multiple time series
   data to predict weekly abx use and resistant rates across multipe pathogens in the
   inpatient setting. Timeframe: 02/2007-03/2020'
 docs_link: Not published but will
-source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

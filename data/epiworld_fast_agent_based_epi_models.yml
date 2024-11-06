@@ -21,9 +21,4 @@ tool_type: Epidemic Model - Scenario Modeling
 input_type: Parameter inputs for simulating the model
 docs_link: https://github.com/UofUEpiBio/epiworld, https://github.com/UofUEpiBio/epiworldR/,
   https://github.com/UofUEpiBio/epiworldpy, https://github.com/UofUEpiBio/epiworldRShiny
-source_link: .na.character
-reviewer: .na.character
 github_link: https://github.com/UofUEpiBio/epiworld
-is_complete: 'yes'
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

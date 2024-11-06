@@ -17,9 +17,4 @@ required_expertise: TBD
 tool_type: Epidemic Model - Scenario Modeling
 input_type: Any population. Population size does not need to be constant.
 docs_link: https://doi.org/10.1080/17513758.2023.2298988
-source_link: .na.character
-reviewer: George
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

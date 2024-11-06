@@ -18,9 +18,4 @@ tool_type: Epidemic Model - Scenario Modeling
 input_type: Single hospital room containing in-patient and hospital
   worker visits
 docs_link: None
-source_link: .na.character
-reviewer: George
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: .na.character

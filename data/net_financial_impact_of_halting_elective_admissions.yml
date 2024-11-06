@@ -18,10 +18,4 @@ input_type: The simulation model was developed using inputs from national
   sources such as US Census, American Hospital Association Annual Survey, and National
   Inpatient Sample
 docs_link: https://pubmed.ncbi.nlm.nih.gov/33427797/
-source_link: .na.character
-reviewer: Andrew
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: .na.character
-overall_assessment: Leave
-  for later - Too complex to address | No functional programming whatsoever

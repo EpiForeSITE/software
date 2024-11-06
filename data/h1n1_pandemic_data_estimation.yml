@@ -15,9 +15,4 @@ tool_type: Parameter estimation 
 input_type: 2009 H1N1 Influenza (Swine Flu) fit to Washington State
   University Student Health Center data set
 docs_link: https://doi.org/10.1016/j.mbs.2015.03.007
-source_link: .na.character
-reviewer: George
 github_link: .na.character
-is_complete: .na.character
-pkg_dev_assessment: Asked for the code
-overall_assessment: .na.character

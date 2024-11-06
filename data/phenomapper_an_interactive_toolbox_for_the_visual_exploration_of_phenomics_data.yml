@@ -19,11 +19,4 @@ input_type: PhenoMapper is an extension of Mapper Interactive, which
   to perform a topological analysis of the data, and subsequently render visual representations
   with built-in data analysis and machine learning capabilities.
 docs_link: https://dl.acm.org/doi/abs/10.1145/3459930.3469511
-source_link:   Software page: https://github.com/tdavislab/PhenoMapper
-reviewer: George
 github_link: https://github.com/tdavislab/PhenoMapper
-is_complete: 'Yes'
-pkg_dev_assessment: This extends another
-  library, not sure if we should be putting effort here.
-overall_assessment: Unsure
-  - Needs group thinking
