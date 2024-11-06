@@ -1,14 +1,14 @@
 tool_name: Long-term acute care hospital (LTACH) intervention model
-brief_description: 'Provides analytic framework for investigating patient-focused
+tool_description: 'Provides analytic framework for investigating patient-focused
   interventions to prevent transmission in high-risk healthcare facilities and their
   direct and population-level health impacts and threshold effects. Scenarios(s) Modeled:
   Intervention scenarios for surveillance and isolation (contact precautions), decolonization
   drugs, infection treatment, horizontal transmission reduction, and length of stay
   reduction.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any pathogen posing risk of hospital transmission among in-patients;
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any pathogen posing risk of hospital transmission among in-patients;
   we have applied the model to carbapenem-resistant Enterobacteriaceae.
 maturity: R code used for publication results is reasonably organized and documented
   but not publicly available. Key functions have been shared and used by others; could
@@ -16,20 +16,20 @@ maturity: R code used for publication results is reasonably organized and docume
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: Single-facility model tailored to data from Chicago area
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Single-facility model tailored to data from Chicago area
   LTACHs experiencing CRE outbreaks; could be re-tailored to other facility types
-link_to_web_page_documentation_optional: '1-Toth D, Khader K, Beams A, Samore M (2019).
+docs_link: '1-Toth D, Khader K, Beams A, Samore M (2019).
   Model-based Assessment of the Effect of Contact Precautions Applied to Surveillance-detected
   Carriers of Carbapenemase-producing Enterobacteriaceae in Long-term Acute Care Hospitals,
   Clinical Infectious Diseases 69(Supplement_3), S206–S213. https://doi.org/10.1093/cid/ciz557.
   2-Toth D, Samore M, Nelson R (2021), Economic Evaluations of New Antibiotics: The
   High Potential Value of Reducing Healthcare Transmission Through Decolonization,
   Clinical Infectious Diseases 72(Supplement_1), S34–S41. https://doi.org/10.1093/cid/ciaa1590.'
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: Asked for the code
+overall_assessment: .na.character

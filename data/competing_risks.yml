@@ -1,23 +1,23 @@
 tool_name: Competing Risks
-brief_description: 'Estimating a competing risks mixture model, which provides both
+tool_description: 'Estimating a competing risks mixture model, which provides both
   the odds ratio of one event occurring vs. another as well as a marginal estimate
   of the time to both respective events. Parameter estimated: Odds ratio of two different
   events occurring and the time to event estimate for both events.'
-name_of_developer_maintainer_or_key_contact: Eric Lofgren
-email_of_developer_maintainer_or_key_contact: Eric.Lofgren@wsu.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Generic. Used on hospital death vs. discharge data.
+contact_name: Eric Lofgren
+contact_email: Eric.Lofgren@wsu.edu
+is_maintained: 'No'
+relevant_diseases: Generic. Used on hospital death vs. discharge data.
 maturity: Old SAS code. Updating to R has been on the to-do list for awhile.
 license: TBD
 languages: SAS
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Generic regression model.
-link_to_web_page_documentation_optional: https://journals.lww.com/epidem/fulltext/2014/07000/hospital_acquired_clostridium_difficile.15.aspx
-link_to_source_code_optional: .na.character
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Generic regression model.
+docs_link: https://journals.lww.com/epidem/fulltext/2014/07000/hospital_acquired_clostridium_difficile.15.aspx
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

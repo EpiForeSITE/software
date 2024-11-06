@@ -1,21 +1,21 @@
 tool_name: University of Utah circuit breaker model
-brief_description: 'A basic model of school closure for the University of Utah fall
+tool_description: 'A basic model of school closure for the University of Utah fall
   reopening. Scenarios(s) Modeled: Delay start, circuit breaker, end early.'
-name_of_developer_maintainer_or_key_contact: Lindsay Keegan
-email_of_developer_maintainer_or_key_contact: Lindsay.Keegan@utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: SARS-CoV-2
+contact_name: Lindsay Keegan
+contact_email: Lindsay.Keegan@utah.edu
+is_maintained: 'No'
+relevant_diseases: SARS-CoV-2
 maturity: Local storage
 license: TBD
 languages: TBD
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: University of Utah
-link_to_web_page_documentation_optional: 'No'
-link_to_source_code_optional: .na.character
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: University of Utah
+docs_link: 'No'
+source_link: .na.character
 reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

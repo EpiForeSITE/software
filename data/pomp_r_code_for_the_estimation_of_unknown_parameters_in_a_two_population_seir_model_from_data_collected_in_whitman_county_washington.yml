@@ -1,30 +1,30 @@
 tool_name: pomp R code for the estimation of unknown parameters in a two-population
   SEIR model from data collected in Whitman County, Washington
-brief_description: 'Build a two-population SEIR model using the pomp coding framework
+tool_description: 'Build a two-population SEIR model using the pomp coding framework
   in R and estimate the unknown parameters in this model using the PMCMC algorithm.
   Parameter estimated: Transmission parameters (transmission within each population
   and transmission across the two-populations), testing probability, and overdispersion
   parameter.'
-name_of_developer_maintainer_or_key_contact: Erin Clancey
-email_of_developer_maintainer_or_key_contact: erin.clancey@wsu.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: COVID-19
+contact_name: Erin Clancey
+contact_email: erin.clancey@wsu.edu
+is_maintained: 'No'
+relevant_diseases: COVID-19
 maturity: Fully developed and documented.
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: This model was developed to model COVID-19 in Whitman County,
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: This model was developed to model COVID-19 in Whitman County,
   Washington. This location has distinct university (WSU) and community populations
   where COVID was transmitted differently within each population with minimal cross-population
   transmission.
-link_to_web_page_documentation_optional: The manuscript is currently available as
+docs_link: The manuscript is currently available as
   a preprint https://www.medrxiv.org/content/10.1101/2024.01.10.24301116v1.full.pdf
   and submitted to the journal Epidemics.
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

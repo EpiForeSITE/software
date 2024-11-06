@@ -1,23 +1,23 @@
 tool_name: ARIMA; Generalize ARIMA; Vector Autoregression
-brief_description: To forecast the weekly positive test number
-name_of_developer_maintainer_or_key_contact: Yue Zhang
-email_of_developer_maintainer_or_key_contact: zhang.yue@hsc.utah.edu
-is_it_actively_maintained_yes_no: N/A
-relevant_disease_s: RSV, influenza, COVID-19
+tool_description: To forecast the weekly positive test number
+contact_name: Yue Zhang
+contact_email: zhang.yue@hsc.utah.edu
+is_maintained: N/A
+relevant_diseases: RSV, influenza, COVID-19
 maturity: Research or Development phase
 license: TBD
 languages: Python
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Forecasting
-type_of_data_input_needed: 'The objective of this study is to use multiple time series
+required_expertise: TBD
+tool_type: Epidemic Model - Forecasting
+input_type: 'The objective of this study is to use multiple time series
   data to predict weekly infection counts for mutiple virus. Timeframe: 12/2002-01/2024'
-link_to_web_page_documentation_optional: no pubication plan
-link_to_source_code_optional: .na.character
+docs_link: no pubication plan
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Nothing to do but publish
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: Nothing to do but publish
   analysis files.  Yue will publish those
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Unsure
+overall_assessment: Unsure
   - Needs group thinking

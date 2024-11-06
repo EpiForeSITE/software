@@ -1,29 +1,29 @@
 tool_name: Nowcasting
-brief_description: Given the time lag between laboratory testing for disease and eventual
+tool_description: Given the time lag between laboratory testing for disease and eventual
   reporting, we’ve developed a model which consumes data from both community and VA
   to predict “now” how many positive tests for a disease (COVID-19 in this context)
   will eventually be reported as positive.  A VA HSR&D abstract is available.
-name_of_developer_maintainer_or_key_contact: Kelly Peterson
-email_of_developer_maintainer_or_key_contact: kelly.peterson2@va.gov ;kelly.peterson@hsc.utah.edu
-is_it_actively_maintained_yes_no: N/A
-relevant_disease_s: Currently this has only been applied to COVID-19, but a similar
+contact_name: Kelly Peterson
+contact_email: kelly.peterson2@va.gov ;kelly.peterson@hsc.utah.edu
+is_maintained: N/A
+relevant_diseases: Currently this has only been applied to COVID-19, but a similar
   approach could be feasible for other diseases as well.
 maturity: Still early in its maturity.  We’ve had this running but have not yet started
   consuming this by analysts or stakeholders to assess value or accuracy.
 license: TBD
 languages: TBD
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Nowcasting tool
-type_of_data_input_needed: Currently VA data used for features includes admissions,
+required_expertise: TBD
+tool_type: Nowcasting tool
+input_type: Currently VA data used for features includes admissions,
   COVID lab orders and their results.   Python-based regression “nowcasting” model
   of gradient boosted trees, implemented with XGBoost and scikit-learn
-link_to_web_page_documentation_optional: 'An abstract of this was presented at VS
+docs_link: 'An abstract of this was presented at VS
   HSR&D meeting.  The text of the abstract is here: https://www.hsrd.research.va.gov/meetings/2023/abstract-display.cfm?AbsNum=
   (There is also a poster)'
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

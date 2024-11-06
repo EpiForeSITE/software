@@ -1,14 +1,14 @@
 tool_name: Healthcare transmission epidemiology estimation at equilibrium
-brief_description: 'Estimate the extent of patient-to-patient transmission and other
+tool_description: 'Estimate the extent of patient-to-patient transmission and other
   quantities using admission prevalence and cross-sectional point-prevalence data
   for carriage of organisms among healthcare facility in-patients. Parameter estimated:
   Patient-to-patient transmission rate, facility reproduction number, rate of progression
   to infection, intervention effects if applicable. Estimates derived via solving
   differential equations at equilibrium and facility reproduction number equations.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any healthcare-transmissible pathogen with appropriate data; we
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any healthcare-transmissible pathogen with appropriate data; we
   have applied our tools to carbapenem-resistant Enterobacteriaceae, C. difficile,
   and S. aureus.
 maturity: R code used for publication results is reasonably organized and documented
@@ -18,24 +18,24 @@ maturity: R code used for publication results is reasonably organized and docume
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Appropriate for application to data sets for patient carriage
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Appropriate for application to data sets for patient carriage
   prevalence at admission and cross-sectional in-patient prevalence, when these quantities
   are stable over time. Contextual data for length of stay, invasive infection rates,
   carriage duration and intervention efforts add utility. Useful for understanding
   transmission risk and threshold effects in healthcare facilities, and for estimating
   intervention effectiveness.
-link_to_web_page_documentation_optional: "o\tToth D, Khader K, Beams A, Samore M (2019).
+docs_link: "o\tToth D, Khader K, Beams A, Samore M (2019).
   Model-based Assessment of the Effect of Contact Precautions Applied to Surveillance-detected
   Carriers of Carbapenemase-producing Enterobacteriaceae in Long-term Acute Care Hospitals,
   Clinical Infectious Diseases 69(Supplement_3), S206–S213. https://doi.org/10.1093/cid/ciz557.\r\no\tToth
   D, Samore M, Nelson R (2021), Economic Evaluations of New Antibiotics: The High
   Potential Value of Reducing Healthcare Transmission Through Decolonization, Clinical
   Infectious Diseases 72(Supplement_1), S34–S41. https://doi.org/10.1093/cid/ciaa1590."
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

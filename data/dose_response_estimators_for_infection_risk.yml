@@ -1,5 +1,5 @@
 tool_name: Dose-response estimators for infection risk
-brief_description: 'Estimate infection probability from a given dose of exposure using
+tool_description: 'Estimate infection probability from a given dose of exposure using
   data sets from experimental dose-quantified exposures of humans or animals; model-based
   results used to perform quantitative risk assessment for potential human exposure
   scenarios. Parameter estimated: Per-unit-dose infection probability and associated
@@ -8,10 +8,10 @@ brief_description: 'Estimate infection probability from a given dose of exposure
   common “infectious dose” quantification metrics such as “ID-50.” Estimates derived
   via maximum likelihood for multiple equation-based dose-response models fit to exposure-response
   data.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any pathogen with appropriate data; we have applied our tools
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any pathogen with appropriate data; we have applied our tools
   to Anthrax, Ebola, influenza, SARS-CoV-1, tularemia, Yersina pestis, Rift Valley
   fever, Andes virus, Lassa virus.
 maturity: R code used for publication results is organized and documented but not
@@ -20,12 +20,12 @@ maturity: R code used for publication results is organized and documented but no
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Appropriate for application to data sets from experimental
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Appropriate for application to data sets from experimental
   dose-quantified exposures of humans or animals; useful for assessing infection risk
   in scenarios where human exposure doses are quantifiable.
-link_to_web_page_documentation_optional: "1-Toth D, Gundlapalli A, Schell W, Bulmahn
+docs_link: "1-Toth D, Gundlapalli A, Schell W, Bulmahn
   K, Walton T, Woods C, Coghill C, Gallegos F, Samore M, Adler F (2013). Quantitative
   models of the dose-response and time course of inhalational anthrax in humans. PLoS
   Pathog, 9(8), e1003555. https://doi.org/10.1371/journal.ppat.1003555.\r\n2-Bulmahn
@@ -33,9 +33,9 @@ link_to_web_page_documentation_optional: "1-Toth D, Gundlapalli A, Schell W, Bul
   Woods C (2012). Final Supplementary Risk Assessment for the Boston University National
   Emerging Infectious Diseases Laboratories, National Institutes of Health. https://www.bu.edu/neidl/files/2013/01/SFEIR-Volume-III.pdf
   (Chapter 8; Appendix J)."
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

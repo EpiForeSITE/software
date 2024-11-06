@@ -1,19 +1,19 @@
 tool_name: Excess Death Estimation
-brief_description: The aberration detection methods introduced by Farrington et al.
+tool_description: The aberration detection methods introduced by Farrington et al.
   and later Noufaily et al. have been implemented to obtain weekly all-cause mortality
   data.
-name_of_developer_maintainer_or_key_contact: Vanessa Stevens or Wathsala Widanagamaachchi
-email_of_developer_maintainer_or_key_contact: vanessa.stevens@hsc.utah.edu; vanessa.stevens@va.gov
+contact_name: Vanessa Stevens or Wathsala Widanagamaachchi
+contact_email: vanessa.stevens@hsc.utah.edu; vanessa.stevens@va.gov
   or wathsala.widanagamaachchi@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: None.  Kelly believes this was all cause mortality estimation.
+is_maintained: 'Yes'
+relevant_diseases: None.  Kelly believes this was all cause mortality estimation.
 maturity: We already have a version of this in operations
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Statistical Model - Forecasting
-type_of_data_input_needed: Data sources for this include both inpatient and outpatient
+required_expertise: TBD
+tool_type: Statistical Model - Forecasting
+input_type: Data sources for this include both inpatient and outpatient
   mortality records. The ‘surveillance’ package in R was used to implement both the
   original Farrington method and the Flexible Farrington method by Noufaily et al.
   depending on the options specified. Control slots are used to specify which options
@@ -21,10 +21,10 @@ type_of_data_input_needed: Data sources for this include both inpatient and outp
   algorithms is that they are relatively robust across applications. Many of the options
   we have used are based on algorithm defaults. Additionally, ‘Nobbs’ nowcasting package
   in R was used to address delays in death reporting before applying Flexible Farrington.
-link_to_web_page_documentation_optional: Not currently published.
-link_to_source_code_optional: .na.character
+docs_link: Not currently published.
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

@@ -1,29 +1,29 @@
 tool_name: Attention-Based Models for Snow-Water Equivalent Prediction
-brief_description: 'Transformer architectures for spatio-temporal prediction (or synthetic
+tool_description: 'Transformer architectures for spatio-temporal prediction (or synthetic
   data generation/imputation). Scenarios(s) Modeled: Predicting the SWE value for
   multiple SNOTEL locations in the Western US using the Attention Models'
-name_of_developer_maintainer_or_key_contact: Ananth Kalyanaraman
-email_of_developer_maintainer_or_key_contact: ananth@wsu.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: Synthetic data generation/imputation
+contact_name: Ananth Kalyanaraman
+contact_email: ananth@wsu.edu
+is_maintained: 'Yes'
+relevant_diseases: Synthetic data generation/imputation
 maturity: Software page: https://github.com/Krishuthapa/SWE-Attention (currently tested
   for SWE prediction application)
 license: TBD
 languages: Python
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: SWE values vary spatiotemporally—affected by weather, topography,
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: SWE values vary spatiotemporally—affected by weather, topography,
   and other environmental factors.
-link_to_web_page_documentation_optional: https://ojs.aaai.org/index.php/AAAI/article/view/30337
-link_to_source_code_optional: .na.character
+docs_link: https://ojs.aaai.org/index.php/AAAI/article/view/30337
+source_link: .na.character
 reviewer: George
-github_repo_new_or_old_if_existing_one: https://github.com/Krishuthapa/SWE-Attention
-complete_yes_no: 'yes'
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: "Potentially a python
+github_link: https://github.com/Krishuthapa/SWE-Attention
+is_complete: 'yes'
+pkg_dev_assessment: "Potentially a python
   module. There are functions and classes that are well-defined. Maybe exporting the
   classes should be enough.\r\n\r\nBut it also has hardcoded stuff in the class def
   files."
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Needs
+overall_assessment: Needs
   some work - Functions/classes are mixed with the code. Need to separate them and
   add them to namespace/__init__.py file.

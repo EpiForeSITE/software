@@ -1,14 +1,14 @@
 tool_name: Statistical Alerts (time series)
-brief_description: We have supported an Operations system for processing time series
+tool_description: We have supported an Operations system for processing time series
   for “aberrations” (aka, “alerts”, “potential outbreaks”) for 8+ years in VA BASIC.  During
   this time, we’ve integrated several among the suite of algorithms available in the
   R package titled “surveillance”.  This includes several classes of numerical methods,
   of which some are window-based, control chart-based or trained linear models.  A
   brief presentation on this is attached here.
-name_of_developer_maintainer_or_key_contact: Kelly Peterson
-email_of_developer_maintainer_or_key_contact: kelly.peterson2@va.gov ;kelly.peterson@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: Many.  We use this system for hundreds of different case definitions,
+contact_name: Kelly Peterson
+contact_email: kelly.peterson2@va.gov ;kelly.peterson@hsc.utah.edu
+is_maintained: 'Yes'
+relevant_diseases: Many.  We use this system for hundreds of different case definitions,
   ranging from COVID-19 to Zika, to drug resistant organisms, to Dengue, etc.
 maturity: This has been deployed for Operations for years, but each algorithm has
   different properties and parameters.  Kelly would say that our current parameters
@@ -17,20 +17,20 @@ maturity: This has been deployed for Operations for years, but each algorithm ha
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Decision Support tool
-type_of_data_input_needed: Currently this is VA time series, could be applied to any
+required_expertise: TBD
+tool_type: Decision Support tool
+input_type: Currently this is VA time series, could be applied to any
   time series with some de-coupling.  As far as technology, currently we’ve implemented
   an implementation which is a Python wrapper (epysurv) over the R package mentioned
   above.  This was selected since the API is more consistent in that it attempts to
   match the popular scikit-learn package.  Further, BASIC has more experience in Python
   than R.
-link_to_web_page_documentation_optional: The way that we implement this system has
+docs_link: The way that we implement this system has
   not been published, but there are links for “surveillance” (https://cran.r-project.org/web/packages/surveillance/index.html)and
   “epysurv” packages (https://epysurv.readthedocs.io/en/latest/).
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

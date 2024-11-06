@@ -1,5 +1,5 @@
 tool_name: 'epiworldpy: A python wrapper for epiworld'
-brief_description: A flexible framework for Agent-Based Models (ABM), the 'epiworldR'
+tool_description: A flexible framework for Agent-Based Models (ABM), the 'epiworldR'
   package provides methods for prototyping disease outbreaks and transmission models
   using a 'C++' backend, making it very fast. It supports multiple epidemiological
   models, including the Susceptible-Infected-Susceptible (SIS), Susceptible-Infected-Removed
@@ -8,22 +8,22 @@ brief_description: A flexible framework for Agent-Based Models (ABM), the 'epiwo
   rates as a function of agents' features, providing great complexity for the model
   dynamics. Furthermore, 'epiworldR' is ideal for simulation studies featuring large
   populations.
-name_of_developer_maintainer_or_key_contact: George G. Vega Yon, Milo Banks
-email_of_developer_maintainer_or_key_contact: george.vegayon@utah.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: .na.character
+contact_name: George G. Vega Yon, Milo Banks
+contact_email: george.vegayon@utah.edu
+is_maintained: 'Yes'
+relevant_diseases: .na.character
 maturity: 'Alpha/Beta phase: ready for inital user testing but requires additional
   development and testing'
 license: MIT
 languages: Python
 audience_type: Modelers
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: Parameter inputs for simulating the model
-link_to_web_page_documentation_optional: https://github.com/UofUEpiBio/epiworldpy
-link_to_source_code_optional: .na.character
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Parameter inputs for simulating the model
+docs_link: https://github.com/UofUEpiBio/epiworldpy
+source_link: .na.character
 reviewer: .na.character
-github_repo_new_or_old_if_existing_one: https://github.com/UofUEpiBio/epiworldpy
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: https://github.com/UofUEpiBio/epiworldpy
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

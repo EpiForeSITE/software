@@ -1,14 +1,14 @@
 tool_name: Herpes Vaccine Model
-brief_description: 'An ODE-based 6-compartment SI model with asymptomatic carriers
+tool_description: 'An ODE-based 6-compartment SI model with asymptomatic carriers
   and vaccinated classes to forecast the number of infections prevented with imperfect
   vaccination and infections prevented per vaccine administered. Parameter estimated:
   Highly correlated parameters determined using LHS PRCC. Scenarios(s) Modeled: Prophylactic
   (pre-exposure) vaccines, Therapeutic (post-exposure) vaccines, Parameter(s) Estimated:
   Highly correlated parameters determined using LHS PRCC'
-name_of_developer_maintainer_or_key_contact: Elissa Schwartz
-email_of_developer_maintainer_or_key_contact: ejs@wsu.edu
-is_it_actively_maintained_yes_no: N/A
-relevant_disease_s: HSV-2 (Herpes Simplex Virus)
+contact_name: Elissa Schwartz
+contact_email: ejs@wsu.edu
+is_maintained: N/A
+relevant_diseases: HSV-2 (Herpes Simplex Virus)
 maturity: Matlab program for uncertainty and sensitivity analysis (Latin Hypercube
   Sampling and Partial Rank Correlation Coefficient analysis) in development and nearing
   completion. Old C/C++ code is being recoded in Matlab and R and should be ready
@@ -16,14 +16,14 @@ maturity: Matlab program for uncertainty and sensitivity analysis (Latin Hypercu
 license: TBD
 languages: Matlab
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling & Parameter estimation
-type_of_data_input_needed: Low prevalence populations (general pop), high-risk populations
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling & Parameter estimation
+input_type: Low prevalence populations (general pop), high-risk populations
   (high prevalence pops)
-link_to_web_page_documentation_optional: 1-https://doi.org/10.1086/429299  2-https://doi.org/10.4161/hv.4529
-link_to_source_code_optional: .na.character
+docs_link: 1-https://doi.org/10.1086/429299  2-https://doi.org/10.4161/hv.4529
+source_link: .na.character
 reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: Asked for the code
+overall_assessment: .na.character

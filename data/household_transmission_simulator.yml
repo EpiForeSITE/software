@@ -1,12 +1,12 @@
 tool_name: Household transmission simulator
-brief_description: 'Simulate household importation and within-household transmission
+tool_description: 'Simulate household importation and within-household transmission
   across a population of households, and intervention effects, e.g. vaccination. Scenarios(s)
   Modeled: Household importation and transmission with variability in transmissibility
   and heterogeneity across age groups and vaccination status.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any household-transmissible pathogen; tool has previously been
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any household-transmissible pathogen; tool has previously been
   used for SARS-CoV-2
 maturity: R code for basic simulation is publicly available [https://github.com/damontoth/householdTransmission].
   Extensions with age heterogeneity and vaccination are under development. Could be
@@ -14,19 +14,19 @@ maturity: R code for basic simulation is publicly available [https://github.com/
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: A population of households in a given area; previously
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: A population of households in a given area; previously
   applied to a distribution of households representative of Utah. Can also be applied
   to residents / staff of small nursing homes.
-link_to_web_page_documentation_optional: '1-Toth D, Beams A, Keegan L, Zhang Y, Greene
+docs_link: '1-Toth D, Beams A, Keegan L, Zhang Y, Greene
   T, Orleans B, Seegert N, Looney A, Alder S, Samore M (2021). High variability in
   transmission of SARS-CoV-2 within households and implications for control. PLoS
   ONE 16(11): e0259097. https://doi.org/10.1371/journal.pone.0259097. 2-Manuscripts
   with age-structured model and vaccination model in preparation'
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: Asked for the code
+overall_assessment: .na.character

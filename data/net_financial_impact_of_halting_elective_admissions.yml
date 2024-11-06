@@ -1,27 +1,27 @@
 tool_name: Net financial impact of halting elective admissions
-brief_description: 'The goal of this model was to estimate the net financial impact
+tool_description: 'The goal of this model was to estimate the net financial impact
   to the hospital of halting elective admissions due to a COVID-19 surge. Measure(s)
   of Economic Impact: Hospital profit'
-name_of_developer_maintainer_or_key_contact: Richard Nelson
-email_of_developer_maintainer_or_key_contact: richard.nelson@utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any elective hospital admission
+contact_name: Richard Nelson
+contact_email: richard.nelson@utah.edu
+is_maintained: 'No'
+relevant_diseases: Any elective hospital admission
 maturity: The SAS code for this model was developed in 2020-2021 ultimately leading
   to a publication in 2021 but has not been touched since. So it would likely need
   to be updated.
 license: TBD
 languages: Stata
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: The simulation model was developed using inputs from national
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: The simulation model was developed using inputs from national
   sources such as US Census, American Hospital Association Annual Survey, and National
   Inpatient Sample
-link_to_web_page_documentation_optional: https://pubmed.ncbi.nlm.nih.gov/33427797/
-link_to_source_code_optional: .na.character
+docs_link: https://pubmed.ncbi.nlm.nih.gov/33427797/
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Leave
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: Leave
   for later - Too complex to address | No functional programming whatsoever

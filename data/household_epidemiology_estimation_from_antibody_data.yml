@@ -1,5 +1,5 @@
 tool_name: Household epidemiology estimation from antibody data
-brief_description: 'Simultaneously estimate household importation risk, household
+tool_description: 'Simultaneously estimate household importation risk, household
   secondary attack rate, and associated variability / heterogeneities using point-prevalence
   data for antibody positivity among household members. Parameter estimated: Household
   importation probability, household secondary attack rate, sensitivity / specificity
@@ -7,30 +7,30 @@ brief_description: 'Simultaneously estimate household importation risk, househol
   heterogeneities in those quantities over age and/or other identifiable characteristics
   of individuals and households. Estimates derived via maximum likelihood for final
   household outbreak size equations.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any household-transmissible pathogen with appropriate data; we
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any household-transmissible pathogen with appropriate data; we
   have applied our tools to SARS-CoV-2.
 maturity: Published
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Appropriate for application to data sets for prevalence
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Appropriate for application to data sets for prevalence
   of antibody positivity (e.g. via testing of serological samples) from members of
   randomly sampled households; useful for understanding transmission risk in close-contact
   indoor settings and mechanisms of epidemiological differences across demographic
   factors. Can also be applied to residents/staff of small nursing homes.
-link_to_web_page_documentation_optional: "1-Toth D, Beams A, Keegan L, Zhang Y, Greene
+docs_link: "1-Toth D, Beams A, Keegan L, Zhang Y, Greene
   T, Orleans B, Seegert N, Looney A, Alder S, Samore M (2021). High variability in
   transmission of SARS-CoV-2 within households and implications for control. PLoS
   ONE 16(11): e0259097. https://doi.org/10.1371/journal.pone.0259097.\r\n2-Manuscript
   with age-structured model in preparation"
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character
+is_complete: .na.character
+pkg_dev_assessment: .na.character
+overall_assessment: .na.character

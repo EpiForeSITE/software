@@ -1,28 +1,28 @@
 tool_name: Bayesian Transmission Model
-brief_description: 'Provides estimates for critical epidemiological parameters that
+tool_description: 'Provides estimates for critical epidemiological parameters that
   characterize the spread of bacterial pathogens in healthcare settings. Parameter
   estimated: Transmission rate (frequency-dependent or density-dependent mass action),
   importation probability, clearance rate (loss of colonization per colonized person
   per unit time), surveillance test sensitivity, surveillance test specificity, effect
   of covariate on transmission (multiplier in relation to overall transmission rate).'
-name_of_developer_maintainer_or_key_contact: Karim Khader
-email_of_developer_maintainer_or_key_contact: karim.khader@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Bacterial pathogens and other pathogens that result in both symptomatic
+contact_name: Karim Khader
+contact_email: karim.khader@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Bacterial pathogens and other pathogens that result in both symptomatic
   and asymptomatic disease states.
 maturity: C++ code can be compiled and run; customization may be required for specific
   uses and to specify the underlying model/parameters of interest.
 license: TBD
 languages: C++
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Developed for use in a healthcare setting, accounts for
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Developed for use in a healthcare setting, accounts for
   ‘flow’ of patients, can allow for multiple sub-units (multiple hospitals, multiple
   wards within each hospital). Uses disease (random or uniform) surveillance data;
   that is testing data that is not targeted to specific populations more/less likely
   to be infected.
-link_to_web_page_documentation_optional: "1.Khader K, Thomas A, Stevens V, Visnovsky
+docs_link: "1.Khader K, Thomas A, Stevens V, Visnovsky
   L, Nevers M, Toth D, Keegan LT, Jones M, Rubin M, Samore MH (2021). Association
   Between Contact Precautions And Transmission of Methicillin-Resistant Staphylococcus
   Aureus in Veterans Affairs Hospitals. JAMA Netw Open.\r\n2.Khader K, Munoz-Price
@@ -42,11 +42,11 @@ link_to_web_page_documentation_optional: "1.Khader K, Thomas A, Stevens V, Visno
   Open Forum Infect Dis.\r\n7.Thomas A, Redd A, Khader K, Leecaster M, Greene T, Samore
   M (2015). Efficient parameter estimation for models of healthcare-associated pathogen
   transmission in discrete and continuous time. Math Med Biol, 32(1), 79-98."
-link_to_source_code_optional: .na.character
+source_link: .na.character
 reviewer: George
-github_repo_new_or_old_if_existing_one: https://github.com/EpiForeSITE/bayesian-transmission
-complete_yes_no: 'yes'
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: A large C++ program.
+github_link: https://github.com/EpiForeSITE/bayesian-transmission
+is_complete: 'yes'
+pkg_dev_assessment: A large C++ program.
   Probably easy to write a cmd line wrapper within R. We could also use Rcpp11.
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Leave
+overall_assessment: Leave
   for later - Too complex to address | No functional programming whatsoever

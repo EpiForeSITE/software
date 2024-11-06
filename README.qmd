@@ -26,14 +26,14 @@ writexl::write_xlsx(x = existing_software, path="data/software.xlsx")
 # Renaming relevant columns
 cnames <- c(
     Tool = "tool_name",
-    Description = "brief_description",
+    Description = "tool_description",
     Languages = "languages",
-    Repo = "github_repo_new_or_old_if_existing_one",
-    Contact = "name_of_developer_maintainer_or_key_contact",
-    Email = "email_of_developer_maintainer_or_key_contact",
-    Links = "link_to_web_page_documentation_optional",
-    Type="type_of_tool",
-    Diseases="relevant_disease_s"
+    Repo = "github_link",
+    Contact = "contact_name",
+    Email = "contact_email",
+    Links = "docs_link",
+    Type="tool_type",
+    Diseases="relevant_diseases"
 )
 
 setnames(existing_software, cnames, names(cnames))
