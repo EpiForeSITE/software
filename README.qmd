@@ -21,7 +21,7 @@ existing_software <- list.files(
     lapply(as.data.table) |>
     rbindlist()
 
-writexl::write_xlsx(x = existing_software, path="data/software.xlsx")
+writexl::write_xlsx(x = existing_software, path = "data/software.xlsx")
 
 # Renaming relevant columns
 cnames <- c(
@@ -32,8 +32,8 @@ cnames <- c(
     Contact = "contact_name",
     Email = "contact_email",
     Links = "docs_link",
-    Type="tool_type",
-    Diseases="relevant_diseases"
+    Type = "tool_type",
+    Diseases = "relevant_diseases"
 )
 
 setnames(existing_software, cnames, names(cnames))
