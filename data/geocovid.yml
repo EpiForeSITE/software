@@ -1,0 +1,20 @@
+tool_name: 'GeoCovid'
+brief_description: Shiny App for visualizing mobility data and COVID-19 cases in Buenos Aires province during March to December 2020.
+name_of_developer_maintainer_or_key_contact: Maria del Pilar Fernandez
+email_of_developer_maintainer_or_key_contact: pilar.fernandez@wsu.edu
+is_it_actively_maintained_yes_no: 'Yes'
+relevant_disease_s: .na.character
+maturity: Under development
+license: .na.character
+languages: R
+audience_type: .na.character
+required_expertise_to_use_tool: .na.character
+type_of_tool: .na.character
+type_of_data_input_needed: .na.character
+link_to_web_page_documentation_optional: https://github.com/Fernandez-Lab-WSU/geocovid_app, https://github.com/Fernandez-Lab-WSU/geocovid_bsas, https://fernandez-lab-wsu.github.io/geocovid-slides/slides.html#/geocovidar
+link_to_source_code_optional: https://github.com/Fernandez-Lab-WSU/geocovid_app
+reviewer: .na.character
+github_repo_new_or_old_if_existing_one: https://github.com/Fernandez-Lab-WSU/geocovid_app
+complete_yes_no: 'yes'
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character

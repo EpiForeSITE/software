@@ -1,0 +1,31 @@
+tool_name: Carriage duration estimation from serial testing data
+brief_description: 'Estimate the duration and heterogeneity of individuals’ colonization
+  episodes for organisms of interest. Parameter estimated: Average and distribution
+  of clearance rate(s) across multiple candidate model forms, average (re)acquisition
+  rate, sensitivity/specificity of testing. Estimates derived via maximum likelihood
+  techniques.'
+name_of_developer_maintainer_or_key_contact: Damon Toth
+email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
+is_it_actively_maintained_yes_no: TBD
+relevant_disease_s: Any pathogen with appropriate serialized test data; we have applied
+  our tools to S. aureus.
+maturity: R code used for publication results is publicly available on Github [https://github.com/alexbeams/StaphCarrierTypes]
+  with documentation. Could be packaged for wider use.
+license: TBD
+languages: R
+audience_type: TBD
+required_expertise_to_use_tool: TBD
+type_of_tool: Parameter estimation 
+type_of_data_input_needed: Appropriate for application to data sets from repeated
+  testing of the same individuals over long time periods relative to typical carriage
+  duration. Useful for understanding dynamics of background carriage in a wide population,
+  important to understand for evaluating intervention effectiveness.
+link_to_web_page_documentation_optional: Beams A, Keegan L, Adler F, Samore M, Khader
+  K, Toth D (2023), Are Staphylococcus aureus Carrier Types Evidence of Population
+  Heterogeneity? American Journal of Epidemiology 192(3), 455–466. https://doi.org/10.1093/aje/kwac201.
+link_to_source_code_optional: .na.character
+reviewer: Andrew
+github_repo_new_or_old_if_existing_one: .na.character
+complete_yes_no: .na.character
+pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
+overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
