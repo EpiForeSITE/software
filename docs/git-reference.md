@@ -13,4 +13,4 @@ GitHub has several ways of linking issues and pull requests (which automatically
 - [Keywords in issues and pull requests](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests)
 - [Manually linking issues and pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue#manually-linking-a-pull-request-to-an-issue-using-the-pull-request-sidebar)
 
-For information on GitHub Actions, see our [GHA Reference](./dev-tools/github-actions.md), which covers topics such as creating new workflows and skipping workflow runs with commands in your commit messages.
+For information on GitHub Actions, see our [GHA Reference](./dev-tools/github-actions.md), which covers topics like creating new workflows and skipping workflow runs with commands in your commit messages.
