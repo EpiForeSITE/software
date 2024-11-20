@@ -1,15 +1,15 @@
 tool_name: Transmission estimation for outbreak clusters
-brief_description: 'Provides estimates for individual-level transmission distribution
+tool_description: 'Provides estimates for individual-level transmission distribution
   (mean and variance) based on data from prior isolated outbreak clusters. Useful
   for quantifying the risk of superspreading events and the risk that future outbreaks
   will exceed a given threshold.Parameter estimated: Basic reproduction number; dispersion
   parameter quantifying variance in transmission; extensions estimate changes in reproduction
   number by generation, e.g. post-control reproduction number. Estimated via maximum
   likelihood using final size distribution equations for branching process models.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Applied to pathogens with subcritical transmission (R < 1) though
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Applied to pathogens with subcritical transmission (R < 1) though
   also relevant for emerging R > 1 pathogens that have not (yet) produced widespread
   sustained transmission in the given context. We have applied the tool to Ebola and
   Middle East respiratory syndrome (MERS).
@@ -19,22 +19,17 @@ maturity: R code used for publication results is reasonably organized and docume
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Appropriate for pathogens that have produced a series of
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Appropriate for pathogens that have produced a series of
   isolated, extinguished outbreak clusters following an initial introduction, e.g.
   zoonotic spillover events or infected incoming travelers followed by a chain of
   human-to-human transmissions.
-link_to_web_page_documentation_optional: 1-Toth D, Gundlapalli A, Khader K, Pettey
+docs_link: 1-Toth D, Gundlapalli A, Khader K, Pettey
   W, Rubin M, Adler F, Samore M (2015). Estimates of outbreak risk from new introductions
   of Ebola with immediate and delayed transmission control. Emerg Infect Dis, 21(8),
   1402-1408. https://doi.org/10.3201/eid2108.150170. 2-Toth D, Tanner W, Khader K,
   Gundlapalli A (2016). Estimates of the risk of large or long-lasting outbreaks of
   Middle East respiratory syndrome after importations outside the Arabian Peninsula.
   Epidemics, 16, 27-32. https://doi.org/10.1016/j.epidem.2016.04.002.
-link_to_source_code_optional: .na.character
-reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character

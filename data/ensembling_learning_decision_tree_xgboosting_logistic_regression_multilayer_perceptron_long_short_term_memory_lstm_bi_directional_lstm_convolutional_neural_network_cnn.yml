@@ -1,27 +1,20 @@
 tool_name: Ensembling Learning; decision tree; XGBoosting; Logistic Regression; Multilayer
   Perceptron; Long short-term memory (LSTM); Bi-directional LSTM; Convolutional Neural
   Network (CNN)
-brief_description: To develop a forecasting model for number of discharged patients
+tool_description: To develop a forecasting model for number of discharged patients
   in a single hospital using EHR data
-name_of_developer_maintainer_or_key_contact: Yue Zhang
-email_of_developer_maintainer_or_key_contact: zhang.yue@hsc.utah.edu
-is_it_actively_maintained_yes_no: TBD
-relevant_disease_s: COVID-19
+contact_name: Yue Zhang
+contact_email: zhang.yue@hsc.utah.edu
+is_maintained: TBD
+relevant_diseases: COVID-19
 maturity: devoloped
 license: TBD
 languages: TBD
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Decision Support tool
-type_of_data_input_needed: 'The objective of this study is to predict next 7-day discharges
+required_expertise: TBD
+tool_type: Decision Support tool
+input_type: 'The objective of this study is to predict next 7-day discharges
   of hospitalized COVID-19 patients using daily-based electronic health records (EHR)
   data. Timeframe: 03/2020-12/2021'
-link_to_web_page_documentation_optional: manuscript under preparation
-link_to_source_code_optional: .na.character
-reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Nothing to do but publish
-  analysis files.  Yue will publish those
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Unsure
-  - Needs group thinking
+docs_link: manuscript under preparation
+github_link: .na.character

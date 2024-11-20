@@ -1,21 +1,16 @@
 tool_name: R code to implement an ODE model using the Tau Leaping algorithm
-brief_description: This code offers flexible implementation of an ODE model using
+tool_description: This code offers flexible implementation of an ODE model using
   the Tau Leaping algorithm in R without the need for a package.
-name_of_developer_maintainer_or_key_contact: Erin Clancey
-email_of_developer_maintainer_or_key_contact: erin.clancey@wsu.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: NA
+contact_name: Erin Clancey
+contact_email: erin.clancey@wsu.edu
+is_maintained: 'No'
+relevant_diseases: NA
 maturity: Developed but not documented
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: .na.character
-link_to_web_page_documentation_optional: The R code is developed, but not documented.
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: .na.character
+docs_link: The R code is developed, but not documented.
+github_link: .na.character

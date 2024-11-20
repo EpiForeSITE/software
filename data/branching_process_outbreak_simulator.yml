@@ -1,13 +1,13 @@
 tool_name: Branching process outbreak simulator
-brief_description: 'Quantifies risk posed by individual importers of a novel transmissible
+tool_description: 'Quantifies risk posed by individual importers of a novel transmissible
   pathogen to a generic population, with intervention effects. Scenarios(s) Modeled:
   Novel introduction of transmissible pathogen by infected traveler, by accidentally
   infected laboratory worker, or similar scenario; intervention scenarios for improved
   detection of initial case and for delayed mitigation after ongoing outbreak is detected.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any emerging transmissible pathogen; we have applied the tool
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any emerging transmissible pathogen; we have applied the tool
   to Ebola and Middle East respiratory syndrome (MERS).
 maturity: R code used for publication results is reasonably organized and documented
   but not publicly available. Key functions have been shared and used by others; could
@@ -15,24 +15,15 @@ maturity: R code used for publication results is reasonably organized and docume
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: Generic population model applicable to local community
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Generic population model applicable to local community
   experiencing the initial importation / infection.
-link_to_web_page_documentation_optional: "1-Toth D, Gundlapalli A, Khader K, Pettey
+docs_link: "1-Toth D, Gundlapalli A, Khader K, Pettey
   W, Rubin M, Adler F, Samore M (2015). Estimates of outbreak risk from new introductions
   of Ebola with immediate and delayed transmission control. Emerg Infect Dis, 21(8),
   1402-1408. https://doi.org/10.3201/eid2108.150170.\r\n2-Toth D, Tanner W, Khader
   K, Gundlapalli A (2016). Estimates of the risk of large or long-lasting outbreaks
   of Middle East respiratory syndrome after importations outside the Arabian Peninsula.
   Epidemics, 16, 27-32. https://doi.org/10.1016/j.epidem.2016.04.002"
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: https://github.com/EpiForeSITE/branching_process/
-complete_yes_no: 'yes'
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: All code is functions
-  only. It could be bundled into an R pkg very easily. We only need to have an example
-  so it is more complete.
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Easy
-  win - Functions are already in a separate file, just need to be added to a namespace/__init__.py
-  file.
+github_link: https://github.com/EpiForeSITE/branching_process/

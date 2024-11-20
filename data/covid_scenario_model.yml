@@ -1,27 +1,19 @@
 tool_name: Covid Scenario model
-brief_description: 'A flexible scenario modeling pipeline that could quickly tailor
+tool_description: 'A flexible scenario modeling pipeline that could quickly tailor
   models for decision makers seeking to compare projections of epidemic trajectories
   and healthcare impacts from multiple intervention scenarios in different locations.
   Scenarios(s) Modeled: Mask, social distance, lock down, comprehensive test/isolate,
   fatiguing interventions'
-name_of_developer_maintainer_or_key_contact: Lindsay Keegan
-email_of_developer_maintainer_or_key_contact: Lindsay.Keegan@utah.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: SARS-CoV-2
+contact_name: Lindsay Keegan
+contact_email: Lindsay.Keegan@utah.edu
+is_maintained: 'Yes'
+relevant_diseases: SARS-CoV-2
 maturity: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: county level, can include as many states as desired
-link_to_web_page_documentation_optional: https://www.nature.com/articles/s41598-021-86811-0
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: https://github.com/HopkinsIDD/COVIDScenarioPipeline
-complete_yes_no: 'yes'
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: It is a collection of
-  packages building a pipeline. Already in container form, maybe could be used to
-  build as a package.
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Leave
-  for later - Too complex to address | No functional programming whatsoever
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: county level, can include as many states as desired
+docs_link: https://www.nature.com/articles/s41598-021-86811-0
+github_link: https://github.com/HopkinsIDD/COVIDScenarioPipeline

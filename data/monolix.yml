@@ -1,10 +1,10 @@
 tool_name: Monolix
-brief_description: 'Parameter estimation in non-linear mixed effect models. Parameter
+tool_description: 'Parameter estimation in non-linear mixed effect models. Parameter
   estimated: Any.'
-name_of_developer_maintainer_or_key_contact: Elissa Schwartz
-email_of_developer_maintainer_or_key_contact: ejs@wsu.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: Any
+contact_name: Elissa Schwartz
+contact_email: ejs@wsu.edu
+is_maintained: 'Yes'
+relevant_diseases: Any
 maturity: Currently using to estimate strength of innate immune response, half-maximal
   effector cell proliferation threshold, effector cell amplification rate, cytotoxic
   T lymphocyte killing rate, time to production of virus by a newly infected cell
@@ -14,13 +14,8 @@ languages: Monolix can be used either via a graphical user interface (GUI) or a 
 audience_type: Pharmacometricians of preclinical and clinical groups can rely on Monolix
   for population analysis and to model PK/PD and other complex biochemical and physiological
   processes.
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Dataset
-link_to_web_page_documentation_optional: https://monolix.lixoft.com/
-link_to_source_code_optional: .na.character
-reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Dataset
+docs_link: https://monolix.lixoft.com/
+github_link: .na.character

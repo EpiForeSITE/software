@@ -1,21 +1,16 @@
 tool_name: DEDiscover (differential evolution)
-brief_description: Parameter estimation using differential evolution.
-name_of_developer_maintainer_or_key_contact: Elissa Schwartz
-email_of_developer_maintainer_or_key_contact: ejs@wsu.edu
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: NA
+tool_description: Parameter estimation using differential evolution.
+contact_name: Elissa Schwartz
+contact_email: ejs@wsu.edu
+is_maintained: 'Yes'
+relevant_diseases: NA
 maturity: DEDiscover is a desktop application to assist non-mathematicians and non-programmers
   simulate and analyze mathematical models based on differential equations.
 license: TBD
 languages: Kotlin, C++.
 audience_type: non-mathematicians and non-programmers
-required_expertise_to_use_tool: TBD
-type_of_tool: Parameter estimation 
-type_of_data_input_needed: Enter model, simulation data, experimental data, etc
-link_to_web_page_documentation_optional: https://www.dediscover.org/
-link_to_source_code_optional: .na.character
-reviewer: Andrew
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+required_expertise: TBD
+tool_type: Parameter estimation 
+input_type: Enter model, simulation data, experimental data, etc
+docs_link: https://www.dediscover.org/
+github_link: .na.character

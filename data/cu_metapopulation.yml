@@ -1,29 +1,21 @@
 tool_name: CU Metapopulation
-brief_description: 'Stochastic representation of an ICU in a tertiary care academic
+tool_description: 'Stochastic representation of an ICU in a tertiary care academic
   medical center. Scenarios(s) Modeled: Staffing changes, cohorting (with some effort),
   decolonization, fecal transplant, antibiotic stewardship (with some modifications).
   Others are possible.'
-name_of_developer_maintainer_or_key_contact: Eric Lofgren
-email_of_developer_maintainer_or_key_contact: Eric.Lofgren@wsu.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: MRSA, C. difficile. COVID-19, SARS, and Ebola are works in progress.
+contact_name: Eric Lofgren
+contact_email: Eric.Lofgren@wsu.edu
+is_maintained: 'No'
+relevant_diseases: MRSA, C. difficile. COVID-19, SARS, and Ebola are works in progress.
 maturity: Python code is available on GitHub, but is honestly a little gnarly (a complex
   configuration file is involved).
 license: TBD
 languages: Python
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: This is the main “workhorse” model for modeling ICUs in
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: This is the main “workhorse” model for modeling ICUs in
   my lab. It currently isn’t connected to hospital or community-level models.
-link_to_web_page_documentation_optional: 'Published: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010352
+docs_link: 'Published: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010352
   for the canonical reference'
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: https://github.com/epimodels/Metapopulation_MRSA
-complete_yes_no: 'yes'
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Some mix of R and python
-  code. Python functions (which run the analysis) are mostly isolated.
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Needs
-  some work - Functions/classes are mixed with the code. Need to separate them and
-  add them to namespace/__init__.py file.
+github_link: https://github.com/epimodels/Metapopulation_MRSA

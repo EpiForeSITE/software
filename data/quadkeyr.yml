@@ -1,23 +1,18 @@
 tool_name: quadkeyr
-brief_description: An R package designed to create raster images from QuadKey-identified
+tool_description: An R package designed to create raster images from QuadKey-identified
   data (Microsoft Bing Maps Tile System), aiming to simplify the analysis of Facebook
   mobility data.
-name_of_developer_maintainer_or_key_contact: Florencia D'Andrea,  Pilar Fernandez
-email_of_developer_maintainer_or_key_contact: .na.character
-is_it_actively_maintained_yes_no: 'Yes'
-relevant_disease_s: .na.character
+contact_name: Florencia D'Andrea,  Pilar Fernandez
+contact_email: .na.character
+is_maintained: 'Yes'
+relevant_diseases: .na.character
 maturity: Published
 license: .na.character
 languages: Python
 audience_type: Modelers
-required_expertise_to_use_tool: TBD
-type_of_tool: .na.character
-type_of_data_input_needed: .na.character
-link_to_web_page_documentation_optional: https://github.com/Fernandez-Lab-WSU/quadkeyr,
+required_expertise: TBD
+tool_type: .na.character
+input_type: .na.character
+docs_link: https://github.com/Fernandez-Lab-WSU/quadkeyr,
   https://joss.theoj.org/papers/10.21105/joss.06500
-link_to_source_code_optional: .na.character
-reviewer: .na.character
-github_repo_new_or_old_if_existing_one: https://github.com/Fernandez-Lab-WSU/quadkeyr
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: https://github.com/Fernandez-Lab-WSU/quadkeyr

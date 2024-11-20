@@ -1,27 +1,22 @@
 tool_name: Inpatient antibiotic prescribing and effects simulator
-brief_description: 'Simulate realistic rates and timing / duration / types of antibiotic
+tool_description: 'Simulate realistic rates and timing / duration / types of antibiotic
   administration to hospital inpatients and their effects on microbial transmission
   and infection, and antibiotic stewardship effects. Scenarios(s) Modeled:  Prescribing
   patterns of different types of antibiotics based on U.S. data; intervention scenarios
   for reducing prescribing, shortening duration of courses, and altering types of
   antibiotics used.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any pathogen with supportable assumptions for antibiotic effects
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any pathogen with supportable assumptions for antibiotic effects
   on hospital epidemiology; we have applied our tools to C. difficile.
 maturity: R code is organized and documented but not publicly available. Could be
   made publicly available or packaged for use with moderate effort.
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: Single facility or small network of facilities
-link_to_web_page_documentation_optional: Pending
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Single facility or small network of facilities
+docs_link: Pending
+github_link: .na.character

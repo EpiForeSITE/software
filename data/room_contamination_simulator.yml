@@ -1,26 +1,21 @@
 tool_name: Room contamination simulator
-brief_description: 'Simulate dynamic levels of contamination in hospital room surfaces
+tool_description: 'Simulate dynamic levels of contamination in hospital room surfaces
   and on patients / healthcare workers in the room. Scenarios(s) Modeled: Shedding
   in-patient in hospital room, susceptible patient in contaminated room, healthcare
   worker performing patient care, room cleaning and hand hygiene interventions, use
   of personal protective equipment.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Any healthcare-associated pathogen; we have applied the tool to
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Any healthcare-associated pathogen; we have applied the tool to
   C. difficile.
 maturity: Documented R code has been shared for use internally but not publicly available.
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: Single hospital room containing in-patient and hospital
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Single hospital room containing in-patient and hospital
   worker visits
-link_to_web_page_documentation_optional: None
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: .na.character
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+docs_link: None
+github_link: .na.character

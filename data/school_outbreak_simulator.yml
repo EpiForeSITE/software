@@ -1,12 +1,12 @@
 tool_name: School outbreak simulator
-brief_description: 'Agent-based simulation of person-to-person transmission at schools
+tool_description: 'Agent-based simulation of person-to-person transmission at schools
   over data-based dynamic proximity contact networks. Scenarios(s) Modeled:  Transmission
   modeled during school hours; can model interventions affecting the contact network
   and school attendance behavior.'
-name_of_developer_maintainer_or_key_contact: Damon Toth
-email_of_developer_maintainer_or_key_contact: Damon.Toth@hsc.utah.edu
-is_it_actively_maintained_yes_no: 'No'
-relevant_disease_s: Influenza; could be repurposed for similarly transmitted diseases.
+contact_name: Damon Toth
+contact_email: Damon.Toth@hsc.utah.edu
+is_maintained: 'No'
+relevant_diseases: Influenza; could be repurposed for similarly transmitted diseases.
 maturity: Written in Anylogic, a Java-based simulation software that is not free or
   publicly available. Code must be run on old machines that still have the software.
   Contact data are publicly available* and could be used as basis for simulation on
@@ -14,17 +14,12 @@ maturity: Written in Anylogic, a Java-based simulation software that is not free
 license: TBD
 languages: Anylogic
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: Single school setting based on data from U.S. elementary
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Single school setting based on data from U.S. elementary
   school and middle school
-link_to_web_page_documentation_optional: Toth D, Leecaster M, Pettey W, Gundlapalli
+docs_link: Toth D, Leecaster M, Pettey W, Gundlapalli
   A, Gao H, Rainey J, Uzicanin A, Samore M (2015). The role of heterogeneity in contact
   timing and duration in network models of influenza spread in schools. J R Soc Interface,
   12(108), 20150279. https://doi.org/10.1098/rsif.2015.0279.
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: .na.character
-complete_yes_no: .na.character
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: Asked for the code
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: .na.character
+github_link: .na.character

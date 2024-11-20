@@ -1,23 +1,16 @@
 tool_name: POMP (Aaron King’s tool, U. of Michigan)
-brief_description: Analysis of time series data based on stochastic dynamical systems
+tool_description: Analysis of time series data based on stochastic dynamical systems
   models
-name_of_developer_maintainer_or_key_contact: Elissa Schwartz
-email_of_developer_maintainer_or_key_contact: ejs@wsu.edu
-is_it_actively_maintained_yes_no: N/A
-relevant_disease_s: NA
+contact_name: Elissa Schwartz
+contact_email: ejs@wsu.edu
+is_maintained: N/A
+relevant_diseases: NA
 maturity: https://kingaa.github.io/pomp/vignettes/getting_started.html
 license: TBD
 languages: R
 audience_type: TBD
-required_expertise_to_use_tool: TBD
-type_of_tool: Epidemic Model - Scenario Modeling
-type_of_data_input_needed: SIR type epi models, Markov processes (partially observed)
-link_to_web_page_documentation_optional: Unknown
-link_to_source_code_optional: .na.character
-reviewer: George
-github_repo_new_or_old_if_existing_one: https://github.com/kingaa/pomp
-complete_yes_no: 'yes'
-pkg_dev_assessment_how_hard_is_to_make_into_a_package_notes: This package is already
-  on CRAN. Not sure what we can do with it.
-overall_assessment_easy_win_needs_some_work_needs_lots_of_work_long_term_project: Unsure
-  - Needs group thinking
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: SIR type epi models, Markov processes (partially observed)
+docs_link: Unknown
+github_link: https://github.com/kingaa/pomp
