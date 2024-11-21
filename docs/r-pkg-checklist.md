@@ -3,7 +3,7 @@
 Our goal is for all R packages under EpiForeSITE to have the following features:
 
 - [ ] Lives on GitHub
-- [ ] Has appropriate [`LICENSE`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) file (see also the [chapter on licensing](https://r-pkgs.org/license.html) from R Packages (2e))
+- [ ] Has appropriate [`LICENSE`](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) file (see also [licensing](https://r-pkgs.org/license.html) from R Packages (2e))
 - [ ] Documented with [`roxygen2`](https://roxygen2.r-lib.org) ([Rd2roxygen](https://cran.r-project.org/package=Rd2roxygen) converts `.Rd` files to `roxygen2`), including function descriptions, parameters and return values, details, examples, references, and links to other relevant functions
 - [ ] Includes at least 1 [`rmarkdown`](https://cran.r-project.org/web/packages/rmarkdown/index.html) vignette with an extended example of package usage
 - [ ] Has a website (e.g., using [pkgdown](https://pkgdown.r-lib.org))
