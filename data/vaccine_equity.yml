@@ -1,0 +1,15 @@
+tool_name: 'Vaccine Equity'
+tool_description: A tool for exploring the effects of varying rates of vaccination among disparate socio-economic groups
+contact_name: Damon Togh  
+contact_email: damon.toth@hcs.utah.edu
+is_maintained: 'Yes'
+relevant_diseases: .na.character
+maturity: Published
+license: MIT
+languages: R
+audience_type: Modelers
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Parameter inputs for simulating the model
+docs_link: https://github.com/EpiForeSITE/vaccine-equity-model
+github_link: https://github.com/EpiForeSITE/vaccine-equity-model
