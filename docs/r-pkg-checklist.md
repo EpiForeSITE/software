@@ -16,10 +16,10 @@ Our goal is for all R packages under EpiForeSITE to have the following features:
 
 ## Additional requirements
 
-- Is listed in [EpiForeSITE/software](https://github.com/EpiForeSITE/software) repository.
-- Lists CDC-CFA award number in the `DESCRIPTION` and `README.md` files.
-- Has a badge pointing back to the [EpiForeSITE/software](https://github.com/EpiForeSITE/software).
-- Has a badge indicating the package's readiness level.
+- [ ] Is listed in [EpiForeSITE/software](https://github.com/EpiForeSITE/software) repository.
+- [ ] Lists CDC-CFA award number in the `DESCRIPTION` and `README.md` files.
+- [ ] Has a badge pointing back to the [EpiForeSITE/software](https://github.com/EpiForeSITE/software).
+- [ ] Has a badge indicating the package's readiness level.
 
 ## Advanced Package Checklist
 
