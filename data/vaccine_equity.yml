@@ -1,10 +1,10 @@
 tool_name: 'Vaccine Equity'
 tool_description: A tool for exploring the effects of varying rates of vaccination among disparate socio-economic groups
-contact_name: Damon Togh  
+contact_name: Damon Toth  
 contact_email: damon.toth@hcs.utah.edu
 is_maintained: 'Yes'
 relevant_diseases: .na.character
-maturity: Published
+maturity: On development
 license: MIT
 languages: R
 audience_type: Modelers
