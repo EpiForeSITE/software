@@ -5,13 +5,13 @@
 This repository is used for coordinating all the software development
 activities by the ForeSITE group.
 
-The list includes 39 tools. A complete list featuring completed and
-work-in-progress tools holds 54 entries. We will be updating this list
+The list includes 40 tools. A complete list featuring completed and
+work-in-progress tools holds 55 entries. We will be updating this list
 as we progress.
 
 |     | Type                                                      |   N |
 |:----|:----------------------------------------------------------|----:|
-| 3   | Epidemic Model - Scenario Modeling                        |  19 |
+| 3   | Epidemic Model - Scenario Modeling                        |  20 |
 | 6   | Parameter estimation                                      |  12 |
 | 4   | Epidemic Model - Scenario Modeling & Parameter estimation |   2 |
 | 1   | Decision Support tool                                     |   1 |
@@ -23,7 +23,7 @@ Number of software packages by type
 
 | Language |   N |
 |:---------|----:|
-| r        |  19 |
+| r        |  20 |
 | Other    |  11 |
 | python   |   7 |
 | c++      |   3 |
@@ -37,7 +37,7 @@ Number of software packages by programming language.
 # Existing software packages
 
 List of existing software packages that are being used by the ForeSITE
-group. This list was last updated on 2024-11-06.
+group. This list was last updated on 2024-11-26.
 
 | N | Tool | Description |
 |---:|:---|:---|
@@ -79,6 +79,7 @@ group. This list was last updated on 2024-11-06.
 | 36 | Serfling (JMP) | Classic Serfling-type regression model for seasonal diseases. Can be used to estimate both excess risk (based on breaching a threshold), or estimate the peak week and other parameters of a yearly epidemic curve.<br>([Learn more…](profiles.md#serfling))<br> |
 | 37 | Statistical Alerts (time series) (R) | We have supported an Operations system for processing time series for “aberrations” (aka, “alerts”, “potential outbreaks”) for 8+ years in VA BASIC. During this time, we’ve integrated several among the suite of algorithms available in the R package titled “surveillance”. This includes several classes of numerical methods, of which some are window-based, control chart-based or trained linear models. A brief presentation on this is attached here.<br>([Learn more…](profiles.md#statistical-alerts-time-series))<br> |
 | 38 | Transmission estimation for outbreak clusters (R) | Provides estimates for individual-level transmission distribution (mean and variance) based on data from prior isolated outbreak clusters. Useful for quantifying the risk of superspreading events and the risk that future outbreaks will exceed a given threshold.Parameter estimated: Basic reproduction number; dispersion parameter quantifying variance in transmission; extensions estimate changes in reproduction number by generation, e.g. post-control reproduction number. Estimated via maximum likelihood using final size distribution equations for branching process models.<br>([Learn more…](profiles.md#transmission-estimation-for-outbreak-clusters))<br> |
-| 39 | Vaccine Hesitancy Model (Matlab, R, and Mathematica.) | An ODE (ordinary differential equation)-based SVEIR model with 3 compartments for symptoms (mild, moderate, severe) that can quantify the tradeoffs between vaccine efficacy and vaccine hesitancy on reducing the disease burden. Scenarios(s) Modeled: R0, cumulative infections, and deaths due to varying values of transmission rate, vaccine coverage rate, vaccine efficacy, and vaccine hesitancy. The vaccine efficacy required to compensate for different levels of vaccine hesitancy.<br>([Learn more…](profiles.md#vaccine-hesitancy-model))<br> |
+| 39 | Vaccine Equity (R) | A tool for exploring the effects of varying rates of vaccination among disparate socio-economic groups<br>([Learn more…](profiles.md#vaccine-equity))<br>**GitHub:** [![GitHub last commit](https://img.shields.io/github/last-commit/EpiForeSITE/vaccine-equity-model.png)](https://github.com/EpiForeSITE/vaccine-equity-model) |
+| 40 | Vaccine Hesitancy Model (Matlab, R, and Mathematica.) | An ODE (ordinary differential equation)-based SVEIR model with 3 compartments for symptoms (mild, moderate, severe) that can quantify the tradeoffs between vaccine efficacy and vaccine hesitancy on reducing the disease burden. Scenarios(s) Modeled: R0, cumulative infections, and deaths due to varying values of transmission rate, vaccine coverage rate, vaccine efficacy, and vaccine hesitancy. The vaccine efficacy required to compensate for different levels of vaccine hesitancy.<br>([Learn more…](profiles.md#vaccine-hesitancy-model))<br> |
 
 ![](README_files/figure-commonmark/wordcloud-1.png)
