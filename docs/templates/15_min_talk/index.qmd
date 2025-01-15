@@ -1,0 +1,431 @@
+---
+title: "epiworld: A fast multi-language library for epi ABMs"
+subtitle: "Software and Data for Complex Systems<br><br>Conference on Complex Systems<br>Exeter, UK"
+format:
+  revealjs:
+    logo: "fig/logo.png"
+    slide-number: true
+    embed-resources: true
+    footer: "Vega Yon *et al.* -- <https://ggv.cl/slides/ccs2024>"
+    code-annotations: below
+    theme: ["default", "style.scss"]
+    title-slide-attributes: 
+      data-background-image: 'fig/Zoom-Background_PrideU.jpg'
+      data-background-opacity: '0.2'
+      data-background-size: 'contain'
+highlight-style: espresso
+author: 
+  - '**George G. Vega Yon**'
+  - Derek Meyer
+  - Milo Banks
+  - Matthew Samore
+institute:
+  - The University of Utah
+date: 2024-09-03
+aspectratio: 169
+fig-format: svg
+---
+
+```{r}
+#| label: preamble
+#| eval: false
+#| echo: false
+#| warning: false
+#| message: false
+# Loading the packages and setting things up
+library(data.table)
+library(igraph)
+library(netplot)
+library(ggplot2)
+```
+
+## Hello world!
+
+Susceptible-Infected-Recovered [SIR] model in epiworld:
+
+::: {.columns}
+::: {.column width="50%" .incremental}
+
+```cpp
+#include "epiworld.hpp"
+
+int main() {
+    epiworld::epimodels::ModelSIR<> model( // <1>
+        "Flu", // Name
+        .01,   // Initial infected
+        .2,    // Transmission rate
+        .14    // Recovery rate
+        );
+
+    model.agents_smallworld(               // <2>
+        100000, // Population size
+        10,     // Number of contacts
+        false,  // Directed = false
+        0.01    // Rewiring probability
+        );
+
+    // Running and printing!
+    model.run(100, 771);                   // <3>
+    model.print();                         // <4>
+
+    return 0;
+}
+```
+1. Create a SIR model.
+2. Create a small-world network.
+3. Run the model for 100 days.
+4. Print the results.
+:::
+::: {.column width="50%"}
+```{bash}
+#| eval: false
+#| echo: true
+#| label: run-hello-world
+#| code-line-numbers: "|16,17|18-30"
+> ./hello-world.o
+_________________________________________________________________________
+Running the model...
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.
+ done.
+________________________________________________________________________________
+________________________________________________________________________________
+SIMULATION STUDY
+
+Name of the model   : Susceptible-Infected-Recovered (SIR)
+Population size     : 100000
+Agents' data        : (none)
+Number of entities  : 0
+Days (duration)     : 100 (of 100)
+Number of viruses   : 1
+Last run elapsed t  : 116.00ms
+Last run speed      : 85.53 million agents x day / second
+Rewiring            : off
+
+Global events:
+ (none)
+
+Virus(es):
+ - covid
+
+Tool(s):
+ (none)
+
+Model parameters:
+ - Recovery rate     : 0.1400
+ - Transmission rate : 0.2000
+
+Distribution of the population at time 100:
+  - (0) Susceptible :  99000 -> 495
+  - (1) Infected    :   1000 -> 213
+  - (2) Recovered   :      0 -> 99292
+
+Transition Probabilities:
+ - Susceptible  0.95  0.05  0.00
+ - Infected     0.00  0.86  0.14
+ - Recovered    0.00  0.00  1.00
+```
+:::
+:::
+
+Full code available [here](hello-world.cpp){target="_blank"}.
+
+## About the software
+
+A general framework for epidemiological agent-based models:
+
+::: {.columns style="text-align: center"}
+::: {.column width="25%" .callout .fragment}
+
+::: {style="text-align: center"}
+{{< fa feather  size=2x >}}
+:::
+
+### Lightweight
+
+- Built on the C++ standard library.
+- Easy to port to other languages (R, Python).
+:::
+::: {.column width="25%" .callout .fragment}
+
+::: {style="text-align: center"}
+{{< fa diagram-project  size=2x >}}
+:::
+
+### A Framework
+
+
+- Highly modular.
+- User-defined states and update dynamics.
+:::
+::: {.column width="25%" .callout .fragment}
+
+::: {style="text-align: center"}
+{{< fa rocket  size=2x >}}
+:::
+
+### Fast
+
+- Out-of-the-box parallelism.
+- Up to 100 million agents-day per second.
+:::
+::: {.column width="25%" .callout .fragment}
+
+::: {style="text-align: center"}
+{{< fa dna  size=2x >}}
+:::
+
+### Complex 
+
+- Multi-virus.
+- Evolving virus.
+- Heterogeneous populations.
+:::
+:::
+
+::: {.fragment}
+Various built-in models, including:
+
+- Susceptible-Infected-Recovered [SIR].
+- Susceptible-Exposed-Infected-Recovered [SEIR].
+- Susceptible-Infected-Susceptible [SIS].
+- Susceptible-Infected-Recovered-Decesed [SIRD].
+- ...
+
+Networked and non-networked versions.
+:::
+
+## About the software: research
+
+We built epiworld to support our research in epidemiological agent-based models:
+
+> Meyer, Derek and Vega Yon, George (2023). *epiworldR: Fast Agent-Based
+  Epi Models*. Journal of Open Source Software, 8(90), 5781,
+  <https://doi.org/10.21105/joss.05781>
+
+- Core library: [epiworld (C++)](https://github.com/UofUEpiBio/epiworld) [![codecov](https://codecov.io/gh/UofUEpiBio/epiworld/graph/badge.svg?token=CPDYG4HA0B)](https://codecov.io/gh/UofUEpiBio/epiworld).
+
+- Existing packages: [epiworldR](https://cran.r-project.org/package=epiworldR) (on CRAN), [epiworldRShiny](https://cran.r-project.org/package=epiworldRShiny) (on CRAN), [epiworldpy](https://github.com/UofUEpiBio/epiworldpy), and [epiworldweb](https://github.com/UofUEpiBio/epiworldweb) (the last two under development).
+
+::: {.fragment}
+- Research projects involving epiworld:
+  
+  1. **Calibration of ABMs via machine learning** (large number of simulations).
+  2. Forecasting models with **mechanistic machine learning** (also large number of simulations).
+  3. Reproductive number **estimation methods** applied to ABMs.
+  4. How **network properties** affect epidemiological statistics.
+  5. Theoretical distribution of Rt and Generation Time in **ABMs**.
+:::
+
+# Architecture {background-color="black"}
+
+## Model building {.center}
+
+![](fig/model-building.png){width="100%" fig-align="center"}
+
+
+## Updates {.center}
+
+![](fig/epiworld-agent-update.png){width="100%" fig-align="center"}
+
+# Example {background-color="black"}
+
+## Demo: SEIR model
+
+::: {.columns}
+::: {.column width="50%" .incremental}
+- SEIR model.
+
+- Population of 200 K agents in a connected graph.
+
+- Two initial viruses: COVID-19 and the Flu.
+
+- Flu has 0.001 probability of mutating. These change the transmission rate.
+
+- Policy: 30% of vaccinated agents.
+
+- Non-pharmaceutical intervention [NPI] : full isolation trigerred when the daily cases are above 1,000. Cools downs when below 100.
+
+:::
+::: {.column width="50%"}
+```{bash}
+#| eval: false
+#| echo: true
+#| label: run-seir
+#| code-line-numbers: "|9,12,14"
+Running the model...
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| done.
+ done.
+________________________________________________________________________________
+________________________________________________________________________________
+SIMULATION STUDY
+
+Name of the model   : Susceptible-Exposed-Infected-Removed (SEIR) (connected)
+Population size     : 200000
+Agents' data        : (none)
+Number of entities  : 0
+Days (duration)     : 180 (of 180)
+Number of viruses   : 205
+Last run elapsed t  : 1.00s
+Last run speed      : 33.36 million agents x day / second
+Rewiring            : off
+
+Global events:
+ - Update infected individuals (runs daily)
+ - Full isolate (runs daily)
+
+Virus(es):
+ - Covid-19
+ - Flu
+ ...and 203 more variants...
+
+Tool(s):
+ - Vaccine
+
+Model parameters:
+ - Avg. Incubation days : 7.0000
+ - Contact rate         : 0.3000
+ - Prob. Recovery       : 0.1429
+ - Prob. Transmission   : 0.3000
+
+Distribution of the population at time 180:
+  - (0) Susceptible : 199960 -> 128884
+  - (1) Exposed     :     40 -> 1754
+  - (2) Infected    :      0 -> 2261
+  - (3) Recovered   :      0 -> 67101
+
+Transition Probabilities:
+ - Susceptible  1.00  0.00  0.00  0.00
+ - Exposed      0.00  0.84  0.16  0.00
+ - Infected     0.00  0.00  0.80  0.20
+ - Recovered    0.00  0.00  0.00  1.00
+```
+:::
+:::
+
+Full code available [here](main.cpp){target="_blank"}.
+
+## Demo: Mutating virus {{< fa dna size=.25x >}}
+
+::: {style="width: 60%" .incremental}
+
+```cpp
+// Creating the model
+Virus<> flu("Flu");             // <1>
+flu.set_incubation(5.0);        // <2>
+flu.set_prob_infecting(0.2);    // <2>
+flu.set_prob_recovery(1.0/7.0); // <2>
+
+// Adding mutation
+flu.set_mutation(flumutates); // <3>
+
+// How will it be distributed 
+flu.set_distribution( // <4>
+  distribute_virus_randomly<>(20, false)
+  ); 
+
+// Adding the virus to the model
+flu.set_state(1, 3);  // <5>
+model.add_virus(flu); // <5>
+```
+1. Create a new virus.
+2. Define the virus parameters.
+3. Define a mutation function.
+4. Define how the virus will be distributed.
+5. Add the virus to the model.
+
+:::
+
+
+## Demo: Non-pharma intervention {{< fa diagram-project size=.25x >}}
+
+::: {style="width: 70%" .incremental}
+```cpp
+EPI_NEW_GLOBALFUN(full_isolation, int) // <1>
+{
+        
+    // Getting new exposed from the model
+    m->get_db().get_today_transition_matrix(tmatrix);
+    int new_exposed = tmatrix[4]; 
+    
+    // Applying the policy
+    if (new_exposed > 1000)
+        m->set_param("Contact rate",  0.3);
+    if (new_exposed < 100)
+        m->set_param("Contact rate",  10);
+
+}
+
+model.add_globalevent(full_isolation, "Full isolate", -99); // <2>
+```
+1. Design the intervention.
+2. Add the intervention to the model (-99 = runs daily).
+:::
+
+
+
+## Demo: Speed-wise {{< fa rocket size=.25x >}}
+
+This experiment (200 K agents for 180 days) took 1 second to run. As a reference, here is a comparison with other tools (different model):
+
+::: {.columns}
+::: {.column width="40%" .incremental}
+Simulated a network SIR with 50 K agents:
+
+- Covasim (Python): ~ 1 second (although the model is more complex, SIRd).
+- Epiworld is 3x faster than igraph, 14x faster than AnyLogic, and 28x faster than ABM.
+:::
+::: {.column width="60%"}
+![](fig/epiworld-benchmark.png)
+:::
+:::
+
+## Demo: Full code
+
+```{r}
+#| echo: false
+#| output: asis
+cat("```cpp\n")
+cat(readLines("main.cpp"), sep = "\n")
+cat("```")
+```
+
+# Final thoughts {background-color="black"}
+
+## Final thoughts 
+
+::: {.incremental}
+- `epiworld` is a **fast C++ library** for epidemiological agent-based models.
+
+- Actively developed and featured in various Epi ABM studies.
+
+- User-friendly versions exist for **R and Python**.
+
+- It's a **framework**: you can define your own states and update dynamics.
+
+- You can get it at <https://github.com/UofUEpiBio/epiworld>.
+
+- We are looking for **collaborators** and **contributors**!
+:::
+
+
+<br>
+
+::: {.fragment}
+### Thanks!
+
+::: { style="text-align: center"}
+{{< fa feather size=2x >}} {{< fa diagram-project  size=2x >}} {{< fa rocket  size=2x >}} {{< fa dna  size=2x >}}
+
+epiworld: "A fast multi-language library for epi ABMs"
+
+George G. Vega Yon, Ph.D.
+
+<https://ggvy.cl>
+:::
+:::
+
+# Appendix {background-color="black"}
+
+## Classes {.center}
+
+![](fig/epiworld-schema.png){width="100%" fig-align="center"}
