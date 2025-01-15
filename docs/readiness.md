@@ -10,6 +10,14 @@ The following figure from Lavin et al. (2022) shows how Machine Learning Technol
 
 ![MLTRL spans research (red) through prototyping (orange), productization (yellow), and deployment (green) (Lavin et al., 2022)](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-022-33128-9/MediaObjects/41467_2022_33128_Fig1_HTML.png?as=webp)
 
+What's clear from all versions of the TRL is that:
+
+- Level 1 is reserved for basic research.
+- Level 8 is for fully operational (tested and documented) technologies.
+- Level 9 is reserved for activities that are actively used in real-world scenarios (deployed)
+
+All other levels are fuzzy as they depend on the context of the technology being assessed.
+
 ## Our approach
 
 From the perspective of tools and methods for public health applications, we can tailor the TRL to reflect the following:
@@ -42,3 +50,4 @@ Potential levels could be:
 - Department of Defense's [Technology Readiness Assessment Guide (June 2023)](https://www.cto.mil/wp-content/uploads/2023/07/TRA-Guide-Jun2023.pdf).
 - NASA's table of [Technology Readiness Levels](https://www.nasa.gov/wp-content/uploads/2017/12/458490main_trl_definitions.pdf?emrc=da53fb) (and [this link](https://esto.nasa.gov/trl) also).
 - Lavin, A., Gilligan-Lee, C.M., Visnjic, A. et al. Technology readiness levels for machine learning systems. Nat Commun 13, 6039 (2022). <https://doi.org/10.1038/s41467-022-33128-9>
+- GAO's Technology Readiness Assessment Guide (GAO-20-48G; January 2020) [PDF](https://www.gao.gov/assets/gao-20-48g.pdf).
