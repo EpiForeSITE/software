@@ -6,6 +6,6 @@ This section of the repository contains some valuable information for developmen
 - Notes about [Git and GitHub](git-reference.md).
 - An [R package checklist](r-pkg-checklist.md) for developers.
 - Examples of GitHub Action [workflows](dev-tools/example-workflows/).
-- And a [template for a software presentation](templates/15_min_talk/).
+- And an [example software presentation](templates/15_min_talk/).
 
 
