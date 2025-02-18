@@ -7,13 +7,15 @@ on:
     branches:
       - "main"
     paths:
-      - 'data/*'
+      - 'data/*.yml'
+      - 'data/*.yaml'
       - 'README.qmd'
   pull_request:
     branches:
       - "main"
     paths:
-      - 'data/*'
+      - 'data/*.yml'
+      - 'data/*.yaml'
       - 'README.qmd'
 
 jobs:
