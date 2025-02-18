@@ -12,7 +12,7 @@ license: MIT
 languages: R
 audience_type: Forecasters
 required_expertise: TBD
-tool_type: Automation pipeline tools
+tool_type: Automation pipeline tool
 input_type: Data sources, model definition, calibration steps
 docs_link: https://github.com/EpiForeSITE/epiworld-forecasts, https://epiforesite.github.io/epiworld-forecasts/, https://github.com/UofUEpiBio/epiworldR/
 github_link: https://github.com/EpiForeSITE/epiworld-forecasts
