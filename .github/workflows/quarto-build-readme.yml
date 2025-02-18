@@ -25,10 +25,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # - name: Set up Quarto
-      #   uses: quarto-dev/quarto-actions/setup@v2
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       # From https://github.com/r-lib/actions/tree/v2-branch/setup-r
       # - name: Setup R
@@ -37,12 +37,12 @@ jobs:
       - name: Install R dependencies
         run: Rscript -e "install.packages('writexl')"
       
-      # - name: Render README with Quarto
-      #   uses: quarto-dev/quarto-actions/render@v2
-      #   with:
-      #     path: README.qmd
       - name: Render README with Quarto
-        run: quarto render README.qmd
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: README.qmd
+      # - name: Render README with Quarto
+      #   run: quarto render README.qmd
 
       # Commit all changed files back to the repository
       - name: Commit changes
