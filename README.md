@@ -14,7 +14,7 @@ as we progress.
 | 4   | Epidemic Model - Scenario Modeling                        |  20 |
 | 7   | Parameter estimation                                      |  12 |
 | 5   | Epidemic Model - Scenario Modeling & Parameter estimation |   2 |
-| 1   | Automation pipeline tools                                 |   1 |
+| 1   | Automation pipeline tool                                  |   1 |
 | 2   | Decision Support tool                                     |   1 |
 | 3   | Epidemic Model - Forecasting                              |   1 |
 | 6   | Nowcasting tool                                           |   1 |
