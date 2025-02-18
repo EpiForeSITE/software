@@ -35,7 +35,7 @@ jobs:
         uses: r-lib/actions/setup-r@v2
       
       - name: Install R dependencies
-        run: Rscript -e "install.packages('writexl', 'rmarkdown', 'yaml', 'data.table', 'knitr')"
+        run: Rscript -e "install.packages(c('writexl', 'rmarkdown', 'yaml', 'data.table', 'knitr'))"
       
       - name: Render README with Quarto
         uses: quarto-dev/quarto-actions/render@v2
