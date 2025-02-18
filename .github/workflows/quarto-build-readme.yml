@@ -6,9 +6,15 @@ on:
   push:
     branches:
       - "main"
+    paths:
+      - 'data/*'
+      - 'README.qmd'
   pull_request:
     branches:
       - "main"
+    paths:
+      - 'data/*'
+      - 'README.qmd'
 
 jobs:
   build-commit:
