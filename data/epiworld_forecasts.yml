@@ -1,0 +1,18 @@
+tool_name: 'epiworld-forecasts: Automatic Disease Forecasting with epiworldR'
+tool_description: epiworld-forecasts uses epiworldR, GitHub Actions, and Docker to generate 
+  disease forecasts that update automatically. While we provide an example forecast of 
+  COVID-19 case counts in Utah, this tool is an open-source, template repository that can 
+  easily be adapted to generate forecasts for different diseases.
+contact_name: Andrew Pulsipher
+contact_email: a.pulsipher@utah.edu
+is_maintained: 'Yes'
+relevant_diseases: .na.character
+maturity: Published
+license: MIT
+languages: R
+audience_type: Forecasters
+required_expertise: TBD
+tool_type: Automation pipeline tools
+input_type: Data sources, model definition, calibration steps
+docs_link: https://github.com/EpiForeSITE/epiworld-forecasts, https://epiforesite.github.io/epiworld-forecasts/, https://github.com/UofUEpiBio/epiworldR/
+github_link: https://github.com/EpiForeSITE/epiworld-forecasts
