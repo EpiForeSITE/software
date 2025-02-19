@@ -1,7 +1,7 @@
 ---
 format: gfm
 ---
-
+[![ForeSITE Group](./docs/assets/foresite-software-badge.svg)](https://github.com/EpiForeSITE)
 
 # Software development coordination
 
