@@ -1,7 +1,7 @@
 
 
 [![ForeSITE
-Group](./docs/assets/foresite-software-badge-new.svg)](https://github.com/EpiForeSITE)
+Group](./docs/assets/foresite-software-badge.svg)](https://github.com/EpiForeSITE)
 
 # Software development coordination
 
