@@ -1,9 +1,9 @@
 
 
+# Software development coordination
+
 [![ForeSITE
 Group](./docs/assets/foresite-software-badge.svg)](https://github.com/EpiForeSITE)
-
-# Software development coordination
 
 This repository is used for coordinating all the software development
 activities by the ForeSITE group.
