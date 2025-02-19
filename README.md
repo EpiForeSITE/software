@@ -1,5 +1,8 @@
 
 
+[![ForeSITE
+Group](./docs/assets/foresite-software-badge.svg)](https://github.com/EpiForeSITE)
+
 # Software development coordination
 
 This repository is used for coordinating all the software development
@@ -38,7 +41,7 @@ Number of software packages by programming language.
 # Existing software packages
 
 List of existing software packages that are being used by the ForeSITE
-group. This list was last updated on 2025-02-18.
+group. This list was last updated on 2025-02-19.
 
 | N | Tool | Description |
 |---:|:---|:---|
