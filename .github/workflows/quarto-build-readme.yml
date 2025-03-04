@@ -1,0 +1,56 @@
+name: Build README
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events
+  push:
+    branches:
+      - "main"
+    paths:
+      - 'data/*.yml'
+      - 'data/*.yaml'
+      - 'README.qmd'
+  pull_request:
+    branches:
+      - "main"
+    paths:
+      - 'data/*.yml'
+      - 'data/*.yaml'
+      - 'README.qmd'
+
+jobs:
+  build-commit:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+      
+      - name: Install R dependencies
+        run: Rscript -e "install.packages(c('writexl', 'rmarkdown', 'yaml', 'data.table', 'knitr'))"
+      
+      - name: Render README with Quarto
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          path: README.qmd
+
+      # Commit all changed files back to the repository
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # Optional commit message for the created commit.
+          commit_message: Automatic README update
+          

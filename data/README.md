@@ -1,6 +1,6 @@
 # List of existing software
 
-This folder holds information about existing software developed by the ForeSITE group. To add a new software, please create a new yaml file (template below) and add it to the list. Executing the [../README.qmd](../README.qmd) quarto file will automatically update the list of software included in the README.md at the root level of the repository and update the `software.xlsx` file included in this folder.
+This folder holds information about existing software developed by the ForeSITE group. To add a new software, please create a new yaml file (template below) and add it to the list. Executing the [../README.qmd](../README.qmd) quarto file (command: `quarto render README.qmd`) will automatically update the list of software included in the README.md at the root level of the repository and update the `software.xlsx` file included in this folder.
 
 ## YAML Template
 Fill in the template fields with your project's information.

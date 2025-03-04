@@ -122,6 +122,14 @@ Contact: George G. Vega Yon (email: george.vegayon@utah.edu)
 
 Links:<br> https://github.com/UofUEpiBio/epiworld, https://github.com/UofUEpiBio/epiworldR/, https://github.com/UofUEpiBio/epiworldpy, https://github.com/UofUEpiBio/epiworldRShiny
 
+## epiworld-forecasts: Automatic Disease Forecasting with epiworldR
+
+epiworld-forecasts uses epiworldR, GitHub Actions, and Docker to generate disease forecasts that update automatically. While we provide an example forecast of COVID-19 case counts in Utah, this tool is an open-source, template repository that can easily be adapted to generate forecasts for different diseases.
+
+Contact: Andrew Pulsipher (email: a.pulsipher@utah.edu)
+
+Links:<br> https://github.com/EpiForeSITE/epiworld-forecasts, https://epiforesite.github.io/epiworld-forecasts/, https://github.com/UofUEpiBio/epiworldR/
+
 ## epiworldpy: A python wrapper for epiworld
 
 A flexible framework for Agent-Based Models (ABM), the 'epiworldR' package provides methods for prototyping disease outbreaks and transmission models using a 'C++' backend, making it very fast. It supports multiple epidemiological models, including the Susceptible-Infected-Susceptible (SIS), Susceptible-Infected-Removed (SIR), Susceptible-Exposed-Infected-Removed (SEIR), and others, involving arbitrary mitigation policies and multiple-disease models. Users can specify infectiousness/susceptibility rates as a function of agents' features, providing great complexity for the model dynamics. Furthermore, 'epiworldR' is ideal for simulation studies featuring large populations.
