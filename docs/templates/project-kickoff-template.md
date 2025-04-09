@@ -1,4 +1,7 @@
+
 # CFA ForeSITE | Project Kick-Off Meeting
+
+---
 
 ## Meeting Details
 *Meeting Date | Time (MST):*
@@ -13,10 +16,14 @@
 
 *Team Members in Attendance:*
 
+---
+
 Please consider the following when using the Project Kick-Off Template:
 1.	This agenda template is intended to be used after the development of a project scope statement. This means that prior meetings with the partner(s) have already occurred, and you are preparing for a formalized kick-off call to review key project information.
 2.	Ensure that there is a facilitator in the meeting who tracks the time allotments appropriately so that all agenda items are covered in a timely manner. 
 3.	Some of the contents in the Project Kick-Off agenda is very much open to discussion and other perspectives. Part of the purpose of the Kick-Off Meeting is to align needs and goals alongside CFA partners, which will be a somewhat iterative process. 
+
+---
 
 ## Project Details
 **Project Title:**
@@ -25,11 +32,14 @@ Please consider the following when using the Project Kick-Off Template:
 
 **Meeting Objective:** To introduce the project to partners, align on key details, and set expectations moving forward.
 
+---
 
 ## Welcome and Introductions (5 minutes)
 **Facilitator(s):**
 
 **Key Information:**
+
+---
 
 ## Project Overview (5-10 minutes)
 **Facilitator(s):**
@@ -42,6 +52,8 @@ Please consider the following when using the Project Kick-Off Template:
         - What problem does it aim to solve?
     - Group discussion of expectations
 
+---
+
 ## Anticipated Deliverables & Outcomes (10 minutes)
 **Facilitator(s):**
 
@@ -51,6 +63,8 @@ Please consider the following when using the Project Kick-Off Template:
     - Any measurable impact that will determine project success
     - Discuss how outcomes will be tracked and reported
 
+---
+
 ## Proposed Project Objectives (10 minutes)
 **Facilitator(s):**
 
@@ -58,6 +72,8 @@ Please consider the following when using the Project Kick-Off Template:
 - Present clear, measurable project objectives that will guide project success
     - Discuss each objective in relation to how it supports the overall project goal
     - Allow stakeholders to ask clarifying questions or suggest adjustments
+
+---
 
 ## Proposed Project Scope (10 minutes)
 **Facilitator(s):**
@@ -72,6 +88,8 @@ Please consider the following when using the Project Kick-Off Template:
         - Data access, sources, etc
     - Any limitations or constraints
 
+---
+
 ## Timeline / Work Methodology (10 minutes)
 **Facilitator(s):**
 
@@ -85,6 +103,8 @@ Please consider the following when using the Project Kick-Off Template:
         - Expected at 6 and 12 weeks
     - Estimated project completion date
     - Get feedback on the timeline and discuss potential risks or blockers
+
+---
 
 ## Action Items / Next Steps (10 minutes)
 **Facilitator(s):**
