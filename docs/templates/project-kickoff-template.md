@@ -25,11 +25,6 @@ Please consider the following when using the Project Kick-Off Template:
 
 **Meeting Objective:** To introduce the project to partners, align on key details, and set expectations moving forward.
 
-## Topic (Time Allocation)
-**Facilitator(s):**
-
-**Key Information:**
-
 
 ## Welcome and Introductions (5 minutes)
 **Facilitator(s):**
