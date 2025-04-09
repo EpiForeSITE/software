@@ -2,10 +2,13 @@
 
 ## Meeting Details
 *Meeting Date | Time (MST):*
+
 *Meeting Location:*
 
 *Meeting called by:*
+
 *Project Management Team:*
+
 *Program Title: CFA ForeSITE*
 
 *Team Members in Attendance:*
