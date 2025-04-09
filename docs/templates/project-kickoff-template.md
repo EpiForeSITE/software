@@ -9,7 +9,7 @@
 
 *Project Management Team:*
 
-*Program Title: CFA ForeSITE*
+*Program Title:* CFA ForeSITE
 
 *Team Members in Attendance:*
 
