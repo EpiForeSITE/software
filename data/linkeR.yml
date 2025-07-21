@@ -1,0 +1,15 @@
+tool_name: 'linkeR: Effortless Linked Views for Shiny Applications'
+tool_description: linkeR makes it effortless to create linked views in Shiny applications. When users interact with one component (like clicking a map marker), all related components (tables, charts, other maps) automatically update to show corresponding information.
+contact_name: Jake Wagoner
+contact_email: jakew@sci.utah.edu
+is_maintained: 'Yes'
+relevant_diseases: .na.character
+maturity: Development
+license: MIT
+languages: R
+audience_type: R Shiny Developers
+required_expertise: Moderate Programming
+tool_type: Developer Tool
+input_type: .na.character
+docs_link: https://epiforesite.github.io/linkeR/
+github_link: https://github.com/EpiForeSITE/linkeR/
