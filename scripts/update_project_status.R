@@ -99,12 +99,19 @@ get_project_metrics <- function(owner, repo, token = NULL) {
     last_commit_date <- as.Date(substr(last_commit_date, 1, 10))
   }
   
-  # Get total commits count (approximate via search API)
+  # Get total commits count (use repository stats instead of search API for better reliability)
   total_commits <- 0
-  search_url <- paste0("https://api.github.com/search/commits?q=repo:", owner, "/", repo)
-  search_data <- github_api_call(search_url, token)
-  if (!is.null(search_data)) {
-    total_commits <- search_data$total_count
+  # Try getting repo stats first (faster and more reliable)
+  stats_data <- github_api_call(paste0(base_url, "/stats/participation"), token)
+  if (!is.null(stats_data) && !is.null(stats_data$all)) {
+    total_commits <- sum(stats_data$all, na.rm = TRUE)
+  } else {
+    # Fallback to search API if stats not available
+    search_url <- paste0("https://api.github.com/search/commits?q=repo:", owner, "/", repo)
+    search_data <- github_api_call(search_url, token)
+    if (!is.null(search_data)) {
+      total_commits <- search_data$total_count
+    }
   }
   
   return(list(
@@ -247,20 +254,52 @@ main <- function() {
     
     project_name <- ifelse(is.na(row$tool_name) || row$tool_name == "", "Unnamed Project", row$tool_name)
     github_link <- row$github_link
-    contributors_cell <- paste0(row$contributor_avatars_html, " (", row$contributors, ")")
-    issues_cell <- paste0("[![Issues](https://img.shields.io/github/issues/", row$owner, "/", row$repo, ")](", github_link, "/issues)")
-    prs_cell <- paste0("[![PRs](https://img.shields.io/github/issues-pr/", row$owner, "/", row$repo, ")](", github_link, "/pulls)")
-    last_commit_cell <- paste0(row$last_commit_date, " ([`", row$last_commit_sha, "`](", github_link, "/commits))")
-    commits_cell <- as.character(row$total_commits)
+    
+    # Handle missing or invalid data gracefully
+    contributors_display <- if (row$contributors > 0) {
+      if (nchar(row$contributor_avatars_html) > 0) {
+        paste0(row$contributor_avatars_html, " (", row$contributors, ")")
+      } else {
+        paste0(row$contributors, " contributor", ifelse(row$contributors > 1, "s", ""))
+      }
+    } else {
+      "No data"
+    }
+    
+    # Use badges for issues and PRs with fallback
+    issues_display <- if (!is.na(row$owner) && !is.na(row$repo)) {
+      paste0("[![Issues](https://img.shields.io/github/issues/", row$owner, "/", row$repo, ")](", github_link, "/issues)")
+    } else {
+      paste0(row$open_issues, " issues")
+    }
+    
+    prs_display <- if (!is.na(row$owner) && !is.na(row$repo)) {
+      paste0("[![PRs](https://img.shields.io/github/issues-pr/", row$owner, "/", row$repo, ")](", github_link, "/pulls)")
+    } else {
+      paste0(row$open_prs, " PRs")
+    }
+    
+    last_commit_display <- if (row$last_commit_date != "Unknown" && row$last_commit_sha != "Unknown") {
+      paste0(row$last_commit_date, " ([`", row$last_commit_sha, "`](", github_link, "/commits))")
+    } else {
+      "No recent commits"
+    }
+    
+    commits_display <- if (row$total_commits > 0) {
+      as.character(row$total_commits)
+    } else {
+      "N/A"
+    }
+    
     repo_cell <- paste0("[", row$owner, "/", row$repo, "](", github_link, ")")
     
     table_row <- paste(
       paste0("| [", project_name, "](", github_link, ")"),
-      contributors_cell,
-      issues_cell,
-      prs_cell,
-      last_commit_cell,
-      commits_cell,
+      contributors_display,
+      issues_display,
+      prs_display,
+      last_commit_display,
+      commits_display,
       repo_cell,
       "|",
       sep = " | "

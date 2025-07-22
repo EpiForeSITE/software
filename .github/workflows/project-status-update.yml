@@ -44,11 +44,11 @@ jobs:
         run: |
           Rscript -e "install.packages(c('yaml', 'data.table', 'httr', 'jsonlite'), repos='https://cloud.r-project.org/')"
       
-      - name: Run project status update script (test mode)
+      - name: Run project status update script
         run: |
-          chmod +x scripts/test_workflow.R
+          chmod +x scripts/update_project_status.R
           cd /home/runner/work/software/software
-          Rscript scripts/test_workflow.R
+          Rscript scripts/update_project_status.R
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
