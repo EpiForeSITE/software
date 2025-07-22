@@ -17,6 +17,11 @@ on:
       - 'scripts/update_project_status.R'
       - '.github/workflows/project-status-update.yml'
 
+  # Trigger on pull requests targeting main
+  pull_request:
+    branches:
+      - "main"
+
 jobs:
   update-status:
     runs-on: ubuntu-latest
