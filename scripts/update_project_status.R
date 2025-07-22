@@ -211,9 +211,11 @@ main <- function() {
     total_commits = as.integer(0)
   )]
   
-  # Get metrics for each project
-  for (i in seq_len(nrow(projects_with_github))) {
-    cat(paste("Processing project", i, "of", nrow(projects_with_github), ":", projects_with_github$tool_name[i], "\n"))
+  # Get metrics for each project (with progress tracking)
+  total_projects <- nrow(projects_with_github)
+  for (i in seq_len(total_projects)) {
+    progress <- sprintf("[%d/%d]", i, total_projects)
+    cat(paste(progress, "Processing project:", projects_with_github$tool_name[i], "\n"))
     
     owner <- projects_with_github$owner[i]
     repo <- projects_with_github$repo[i]
@@ -230,10 +232,17 @@ main <- function() {
         contributor_avatars_html = create_avatars_html(metrics$contributor_avatars),
         total_commits = metrics$total_commits
       )]
+      
+      # Log some info about what we found
+      cat(paste("  ->", metrics$contributors, "contributors,", metrics$open_issues, "issues,", metrics$open_prs, "PRs\n"))
+    } else {
+      cat("  -> Invalid repository info, skipping API calls\n")
     }
     
     # Add small delay to be nice to GitHub API
-    Sys.sleep(0.5)
+    if (i < total_projects) {
+      Sys.sleep(0.5)
+    }
   }
   
   # Generate markdown table
