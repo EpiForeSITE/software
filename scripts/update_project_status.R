@@ -90,7 +90,7 @@ get_project_metrics <- function(owner, repo, token = NULL) {
   contributor_avatars <- character(0)
   if (!is.null(contributors_data) && length(contributors_data) > 0) {
     # Get up to first 10 contributors' avatars
-    contributor_avatars <- sapply(head(contributors_data, 10), function(x) x$avatar_url)
+    contributor_avatars <- head(contributors_data, 10)$avatar_url
   }
   
   # Get open pull requests
@@ -98,12 +98,12 @@ get_project_metrics <- function(owner, repo, token = NULL) {
   open_prs <- if (!is.null(pulls_data)) length(pulls_data) else 0
   
   # Get last commit
-  commits_data <- github_api_call(paste0(base_url, "/commits?per_page=1"), token)
+  commits_data <<- github_api_call(paste0(base_url, "/commits?per_page=1"), token)
   last_commit_date <- "Unknown"
   last_commit_sha <- "Unknown"
   if (!is.null(commits_data) && length(commits_data) > 0) {
-    last_commit_date <- commits_data[[1]]$commit$committer$date
-    last_commit_sha <- substr(commits_data[[1]]$sha, 1, 7)
+    last_commit_date <- commits_data[1,,drop=FALSE]$commit$committer$date
+    last_commit_sha <- substr(commits_data[1,,drop=FALSE]$sha, 1, 7)
     # Convert to readable date
     last_commit_date <- as.Date(substr(last_commit_date, 1, 10))
   }
@@ -206,8 +206,10 @@ main <- function() {
   # Extract repository information and get metrics
   projects_with_github[, c("owner", "repo") := {
     repo_info <- extract_repo_info(github_link)
-    list(repo_info$owner, repo_info$repo)
-  }]
+    list(
+      sapply(repo_info, "[[", "owner"),
+      sapply(repo_info, "[[", "repo")
+    )}]
   
   # Initialize metrics columns
   projects_with_github[, `:=`(
