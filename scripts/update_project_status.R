@@ -38,7 +38,16 @@ github_api_call <- function(url, token = NULL) {
 
 # Function to extract owner and repo from GitHub URL
 extract_repo_info <- function(github_url) {
-  if (is.na(github_url) || github_url == "") return(list(owner = NA, repo = NA))
+
+  # Checking if is a vector or not
+  if (length(github_url) > 1L)
+    return(
+      lapply(github_url, extract_repo_info)
+    )
+
+  if (is.na(github_url) || github_url == "") return(
+    list(owner = NA, repo = NA)
+    )
   
   # Remove trailing slash and .git if present
   clean_url <- gsub("/$", "", github_url)
