@@ -1,0 +1,15 @@
+tool_name: 'rbranding'
+tool_description: An R package that facilitates the creation of Shiny applications and quarto documents with support for site-specific branding and styling.
+contact_name: Willy Ray
+contact_email: william.ray@hsc.utah.edu
+is_maintained: 'Yes'
+relevant_diseases: .na.character
+maturity: On development
+license: MIT
+languages: R
+audience_type: Public health professionals, dashboard and report builders
+required_expertise: TBD
+tool_type: Developer Tool
+input_type: .na.character 
+docs_link: https://epiforesite.github.io/branding-package/
+github_link: https://github.com/EpiForeSITE/branding-package

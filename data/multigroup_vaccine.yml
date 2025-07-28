@@ -11,5 +11,5 @@ audience_type: Modelers
 required_expertise: TBD
 tool_type: Epidemic Model - Scenario Modeling
 input_type: Parameter inputs for simulating the model
-docs_link: https://github.com/EpiForeSITE/vaccine-equity-model
-github_link: https://github.com/EpiForeSITE/vaccine-equity-model
+docs_link: https://github.com/EpiForeSITE/multigroup-vaccine
+github_link: https://github.com/EpiForeSITE/multigroup-vaccine
