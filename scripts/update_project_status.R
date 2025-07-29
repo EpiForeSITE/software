@@ -74,7 +74,7 @@ get_project_metrics <- function(owner, repo, token = NULL) {
       last_commit_date = "Unknown",
       last_commit_sha = "Unknown",
       contributor_avatars = character(0),
-      total_commits = 0
+      total_commits = -1
     ))
   }
   
@@ -109,7 +109,7 @@ get_project_metrics <- function(owner, repo, token = NULL) {
   }
   
   # Get total commits count (use repository stats instead of search API for better reliability)
-  total_commits <- 0
+  total_commits <- -1  # -1 indicates API failure
   # Try getting repo stats first (faster and more reliable)
   stats_data <- github_api_call(paste0(base_url, "/stats/participation"), token)
   if (!is.null(stats_data) && !is.null(stats_data$all)) {
@@ -219,7 +219,7 @@ main <- function() {
     last_commit_date = as.character("Unknown"),
     last_commit_sha = as.character("Unknown"),
     contributor_avatars_html = as.character(""),
-    total_commits = as.integer(0)
+    total_commits = as.integer(-1)
   )]
   
   # Get metrics for each project (with progress tracking)
@@ -264,8 +264,8 @@ main <- function() {
     "",
     paste("This dashboard tracks", nrow(projects_with_github), "EpiForeSITE projects with GitHub repositories."),
     "",
-    "| Project | Contributors | Issues | PRs | Last Commit | Commits | Repository |",
-    "|---------|-------------|--------|-----|-------------|---------|------------|"
+    "| Project | Contributors | Issues, PRs, and Last Commit | Commits | Repository |",
+    "|---------|-------------|--------------------------|---------|------------|"
   )
   
   # Create table rows
@@ -278,7 +278,7 @@ main <- function() {
     # Handle missing or invalid data gracefully
     contributors_display <- if (row$contributors > 0) {
       if (nchar(row$contributor_avatars_html) > 0) {
-        paste0(row$contributor_avatars_html, " (", row$contributors, ")")
+        row$contributor_avatars_html
       } else {
         paste0(row$contributors, " contributor", ifelse(row$contributors > 1, "s", ""))
       }
@@ -305,7 +305,10 @@ main <- function() {
       "No recent commits"
     }
     
-    commits_display <- if (row$total_commits > 0) {
+    # Combine Issues, PRs, and Last Commit into single column with line breaks
+    combined_issues_prs_commits <- paste(issues_display, prs_display, last_commit_display, sep = "<br> ")
+    
+    commits_display <- if (row$total_commits >= 0) {
       as.character(row$total_commits)
     } else {
       "N/A"
@@ -316,9 +319,7 @@ main <- function() {
     table_row <- paste(
       paste0("| [", project_name, "](", github_link, ")"),
       contributors_display,
-      issues_display,
-      prs_display,
-      last_commit_display,
+      combined_issues_prs_commits,
       commits_display,
       repo_cell,
       "|",
