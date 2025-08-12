@@ -108,18 +108,42 @@ get_project_metrics <- function(owner, repo, token = NULL) {
     last_commit_date <- as.Date(substr(last_commit_date, 1, 10))
   }
   
-  # Get total commits count (use repository stats instead of search API for better reliability)
+  # Get total commits count using multiple methods for better reliability
   total_commits <- -1  # -1 indicates API failure
-  # Try getting repo stats first (faster and more reliable)
-  stats_data <- github_api_call(paste0(base_url, "/stats/participation"), token)
-  if (!is.null(stats_data) && !is.null(stats_data$all)) {
-    total_commits <- sum(stats_data$all, na.rm = TRUE)
+  
+  # Method 1: Try search API first (gets total commits across entire repository history)
+  # Note: This requires authentication and has rate limits, but gives accurate total counts
+  search_url <- paste0("https://api.github.com/search/commits?q=repo:", owner, "/", repo)
+  search_data <- github_api_call(search_url, token)
+  if (!is.null(search_data) && !is.null(search_data$total_count)) {
+    total_commits <- search_data$total_count
   } else {
-    # Fallback to search API if stats not available
-    search_url <- paste0("https://api.github.com/search/commits?q=repo:", owner, "/", repo)
-    search_data <- github_api_call(search_url, token)
-    if (!is.null(search_data)) {
-      total_commits <- search_data$total_count
+    # Method 2: Try getting repository statistics for contributor activity
+    # This might give us a better estimate than participation stats
+    stats_url <- paste0(base_url, "/stats/contributors")
+    contributors_stats <- github_api_call(stats_url, token)
+    if (!is.null(contributors_stats) && length(contributors_stats) > 0) {
+      # Sum up all contributions from all contributors
+      total_commits <- sum(sapply(contributors_stats, function(contributor) {
+        if (!is.null(contributor$total)) contributor$total else 0
+      }), na.rm = TRUE)
+    } else {
+      # Method 3: Fallback to participation stats (last 52 weeks only)
+      stats_data <- github_api_call(paste0(base_url, "/stats/participation"), token)
+      if (!is.null(stats_data) && !is.null(stats_data$all)) {
+        # This gives us commits from last 52 weeks only - not ideal but better than nothing
+        total_commits <- sum(stats_data$all, na.rm = TRUE)
+      } else {
+        # Method 4: Last resort - check if any commits exist
+        commits_page <- github_api_call(paste0(base_url, "/commits?per_page=1"), token)
+        if (!is.null(commits_page) && length(commits_page) > 0) {
+          # Repository has commits but we can't get count - return -1 to indicate API limitation
+          total_commits <- -1
+        } else {
+          # No commits found
+          total_commits <- 0
+        }
+      }
     }
   }
   
