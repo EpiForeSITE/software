@@ -1,0 +1,15 @@
+tool_name: 'epitraxr: Manipulate Epitrax Data And Generate Reports'
+tool_description: R package for manipulating Epitrax data and generating reports. This tool is designed to simplify the process of working with Epitrax data, making it easier for public health professionals to analyze and report on disease surveillance data. It generates internal and public reports in CSV, Excel, or PDF formats.
+contact_name: Andrew Pulsipher
+contact_email: a.pulsipher@utah.edu
+is_maintained: 'Yes'
+relevant_diseases: .na.character
+maturity: Published
+license: MIT
+languages: R
+audience_type: Public Health Professionals
+required_expertise: Beginner
+tool_type: 'Decision Support tool'
+input_type: Epitrax data
+docs_link: https://epiforesite.github.io/epitraxr/, https://github.com/EpiForeSITE/epitraxr
+github_link: https://github.com/EpiForeSITE/epitraxr
