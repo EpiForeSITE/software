@@ -125,7 +125,14 @@ get_project_metrics <- function(owner, repo, token = NULL) {
     if (!is.null(contributors_stats) && length(contributors_stats) > 0) {
       # Sum up all contributions from all contributors
       total_commits <- sum(sapply(contributors_stats, function(contributor) {
-        if (!is.null(contributor$total)) contributor$total else 0
+        # Handle both atomic vectors and list/data.frame structures
+        if (is.null(contributor)) {
+          0
+        } else if (is.list(contributor) && !is.null(contributor[["total"]])) {
+          contributor[["total"]]
+        } else {
+          0
+        }
       }), na.rm = TRUE)
     } else {
       # Method 3: Fallback to participation stats (last 52 weeks only)
