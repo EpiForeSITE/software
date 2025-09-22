@@ -23,6 +23,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  pull-requests: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -69,7 +70,7 @@ jobs:
         uses: CDCgov/cfa-actions/post-artifact@main
         with:
           artifact-name: handbook-site
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
 
   # Deploy to GitHub Pages (only on main branch)
   deploy:
