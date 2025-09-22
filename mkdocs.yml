@@ -1,0 +1,41 @@
+site_name: ForeSITE Group Handbook
+site_description: Best practices and guidelines for the ForeSITE Group
+site_url: https://epiforesite.github.io/software
+repo_url: https://github.com/EpiForeSITE/software
+repo_name: EpiForeSITE/software
+docs_dir: handbook
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+
+nav:
+  - Home: index.md
+  - Best Practices:
+    - Writing R Packages: r-packages.md
+    - Writing Python Libraries: python-libraries.md
+    - ShinyApps: shiny-apps.md
+    - Code for Papers: code-for-papers.md
+    - Agile Planning: agile-planning.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+plugins:
+  - search
