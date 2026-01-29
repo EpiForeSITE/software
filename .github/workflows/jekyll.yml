@@ -1,0 +1,100 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_config.yml'
+      - '_layouts/**'
+      - '_includes/**'
+      - '_posts/**'
+      - '_data/**'
+      - 'assets/**'
+      - '*.md'
+      - '*.html'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - '.github/workflows/jekyll.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '_config.yml'
+      - '_layouts/**'
+      - '_includes/**'
+      - '_posts/**'
+      - '_data/**'
+      - 'assets/**'
+      - '*.md'
+      - '*.html'
+      - 'Gemfile'
+      - 'Gemfile.lock'
+      - '.github/workflows/jekyll.yml'
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "jekyll-${{ github.head_ref || github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --destination _site
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: ./_site
+
+  # Post artifact link in PR comments
+  post-artifact:
+    if: github.event_name == 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post artifact link
+        uses: CDCgov/cfa-actions/post-artifact@main
+        with:
+          artifact-name: jekyll-site
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+
+  # Deploy to GitHub Pages (only on main branch)
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
