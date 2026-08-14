@@ -131,7 +131,8 @@ detect_cran_package <- function(cran_name, tool_name, owner, repo) {
   NA_character_
 }
 
-# CRAN version and download badges for a package
+# CRAN version and download badges for a package, kept on one line so they sit
+# next to each other under the repository link
 create_cran_badges_html <- function(pkg) {
   if (is.na(pkg)) return("")
   cran_page <- paste0("https://cran.r-project.org/package=", pkg)
@@ -139,7 +140,7 @@ create_cran_badges_html <- function(pkg) {
     paste0("[![CRAN](https://www.r-pkg.org/badges/version/", pkg, ")](", cran_page, ")"),
     paste0("[![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/", pkg, ")](", cran_page, ")"),
     paste0("[![Downloads/month](https://cranlogs.r-pkg.org/badges/", pkg, ")](", cran_page, ")"),
-    sep = "<br> "
+    sep = " "
   )
 }
 
@@ -400,8 +401,8 @@ main <- function() {
     "",
     "Projects are sorted by most recent commit.",
     "",
-    "| Project | Contributors | Issues, PRs, and Last Commit | Commits | CRAN | Repository |",
-    "|---------|--------------|------------------------------|---------|------|------------|"
+    "| Project | Contributors | Issues, PRs, and Last Commit | Commits | Repository |",
+    "|---------|--------------|------------------------------|---------|------------|"
   )
 
   # Create table rows
@@ -454,10 +455,12 @@ main <- function() {
       "N/A"
     }
     
+    # CRAN badges, when the project is on CRAN, sit under the repository link
     repo_cell <- paste0("[", row$owner, "/", row$repo, "](", github_link, ")")
-
     cran_display <- create_cran_badges_html(row$cran_package)
-    if (!nzchar(cran_display)) cran_display <- "&mdash;"
+    if (nzchar(cran_display)) {
+      repo_cell <- paste(repo_cell, cran_display, sep = "<br> ")
+    }
 
     table_row <- paste0(
       "| ", paste(
@@ -465,7 +468,6 @@ main <- function() {
         contributors_display,
         combined_issues_prs_commits,
         commits_display,
-        cran_display,
         repo_cell,
         sep = " | "
       ), " |"

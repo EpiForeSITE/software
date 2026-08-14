@@ -73,8 +73,8 @@ Generates `project_status.md` with:
 - Issue and PR badges
 - Last commit information
 - Total commit count
-- CRAN version and download badges for projects published on CRAN
-- Direct repository links
+- Direct repository links, followed by CRAN version and download badges for
+  projects published on CRAN
 
 The dashboard tracks the EpiForeSITE projects in `data/` that have a GitHub
 repository (currently 23).

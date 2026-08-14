@@ -31,8 +31,8 @@ github_link:
 When `cran_name` is absent, [`../scripts/update_project_status.R`](../scripts/update_project_status.R)
 tries the repository name and the first word of `tool_name` against the CRAN index, and
 only accepts a match when the CRAN metadata links back to the same GitHub owner or
-repository. Matching projects get CRAN version and download badges in
-[`../project_status.md`](../project_status.md).
+repository. Matching projects get CRAN version and download badges next to their
+repository link in [`../project_status.md`](../project_status.md).
 
 ## Example Project YAML File 
 ```yaml
