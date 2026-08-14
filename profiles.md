@@ -154,6 +154,14 @@ Contact: George G. Vega Yon, Milo Banks (email: george.vegayon@utah.edu)
 
 Links:<br> https://github.com/UofUEpiBio/epiworldpy
 
+## epiworldRcalibrate: Fast and Effortless Calibration of Agent-Based Models using Machine Learning
+
+Provides tools and pre-trained Machine Learning [ML] models for calibration of Agent-Based Models [ABMs] built with the R package 'epiworldR'. Implements methods described in Najafzadehkhoei, Vega Yon, Modenesi, and Meyer (2025) <doi:10.48550/arXiv.2509.07013>. Users can automatically calibrate ABMs in seconds with pre-trained ML models, effectively focusing on simulation rather than calibration. Bridges a gap by allowing public health practitioners to run their own ABMs without the advanced technical expertise often required by calibration.
+
+Contact: Sima Najafzadehkhoei (email: sima.njf@utah.edu)
+
+Links:<br> https://sima-njf.github.io/epiworldRcalibrate/, https://github.com/sima-njf/epiworldRcalibrate
+
 ## GeoCovid
 
 Shiny App for visualizing mobility data and COVID-19 cases in Buenos Aires province during March to December 2020.
@@ -338,7 +346,7 @@ An R package that facilitates the creation of Shiny applications and quarto docu
 
 Contact: Willy Ray (email: william.ray@hsc.utah.edu)
 
-Links:<br> https://epiforesite.github.io/branding-package/
+Links:<br> https://epiforesite.github.io/rbranding/
 
 ## School outbreak simulator
 
