@@ -1,0 +1,22 @@
+tool_name: 'measles: Measles Epidemiological Models'
+tool_description: A specialized collection of measles epidemiological models built on
+  the 'epiworldR' framework. This package is a spinoff from 'epiworldR' focusing
+  specifically on measles transmission dynamics. It includes models for school settings
+  with quarantine and isolation policies, mixing models with population groups, and
+  risk-based quarantine strategies. The models use Agent-Based Models (ABM) with a fast
+  'C++' backend from the 'epiworld' library. Ideal for studying measles outbreaks,
+  vaccination strategies, and intervention policies.
+contact_name: George G. Vega Yon
+contact_email: george.vegayon@utah.edu
+is_maintained: 'Yes'
+relevant_diseases: Measles
+maturity: Published
+license: MIT
+languages: R, C++
+audience_type: Modelers
+required_expertise: TBD
+tool_type: Epidemic Model - Scenario Modeling
+input_type: Parameter inputs for simulating the model
+docs_link: https://uofuepibio.github.io/measles/, https://github.com/UofUEpiBio/measles
+github_link: https://github.com/UofUEpiBio/measles
+cran_name: measles

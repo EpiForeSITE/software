@@ -1,0 +1,22 @@
+tool_name: 'EPICC: Epidemiological Cost Calculator'
+tool_description: EPICC is a Streamlit web application for estimating and comparing the
+  economic cost of outbreak scenarios. Users pick a disease (measles and tuberculosis
+  presets are included), adjust the pre-populated cost and outbreak parameters, and
+  compare multiple scenarios side by side. Parameter sets can be authored and exchanged
+  as YAML or XLSX files, are validated against a generated Pydantic model, and results
+  can be exported as a shareable report for public health officials and other
+  decision makers.
+contact_name: Edward Wang, George G. Vega Yon
+contact_email: george.vegayon@utah.edu
+is_maintained: 'Yes'
+relevant_diseases: Measles, Tuberculosis
+maturity: 'Alpha/Beta phase: ready for initial user testing but requires additional
+  development and testing'
+license: .na.character
+languages: Python
+audience_type: Public Health Professionals
+required_expertise: Beginner
+tool_type: Decision Support tool
+input_type: Disease, outbreak, and cost parameters (YAML or XLSX)
+docs_link: https://epiforesite.github.io/epicc/, https://epiworldpythonapp.streamlit.app/
+github_link: https://github.com/EpiForeSITE/epicc

@@ -22,6 +22,18 @@ docs_link:
 github_link:
 ```
 
+### Optional fields
+
+| Field | Description |
+|:------|:------------|
+| `cran_name` | Name of the package on CRAN. Only needed when it cannot be guessed from the repository or tool name (e.g. `epiworldR` for the `epiworld` repository). Set it to `no` to keep the project status dashboard from looking the project up on CRAN. |
+
+When `cran_name` is absent, [`../scripts/update_project_status.R`](../scripts/update_project_status.R)
+tries the repository name and the first word of `tool_name` against the CRAN index, and
+only accepts a match when the CRAN metadata links back to the same GitHub owner or
+repository. Matching projects get CRAN version and download badges next to their
+repository link in [`../project_status.md`](../project_status.md).
+
 ## Example Project YAML File 
 ```yaml
 tool_name: 'epiworld: Fast Agent-Based Epi Models'

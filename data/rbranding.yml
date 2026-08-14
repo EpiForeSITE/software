@@ -11,5 +11,6 @@ audience_type: Public health professionals, dashboard and report builders
 required_expertise: TBD
 tool_type: Developer Tool
 input_type: .na.character 
-docs_link: https://epiforesite.github.io/branding-package/
-github_link: https://github.com/EpiForeSITE/branding-package
+docs_link: https://epiforesite.github.io/rbranding/
+github_link: https://github.com/EpiForeSITE/rbranding
+cran_name: rbranding
