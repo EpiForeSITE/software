@@ -18,7 +18,8 @@ existing_software <- list.files(
     ) |> 
     lapply(FUN = yaml.load_file, as.named.list = TRUE) |>
     lapply(as.data.table) |>
-    rbindlist()
+    # `fill` keeps optional fields (e.g. `cran_name`) from breaking the bind
+    rbindlist(fill = TRUE)
 
 writexl::write_xlsx(x = existing_software, path = "data/software.xlsx")
 
