@@ -53,4 +53,8 @@ jobs:
         with:
           # Optional commit message for the created commit.
           commit_message: Automatic README update
+          # Keep workflow-generated commits attributed to GitHub Actions.
+          commit_user_name: github-actions[bot]
+          commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           
