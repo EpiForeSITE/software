@@ -1,6 +1,6 @@
 # Project Status Dashboard
 
-Last updated: 2026-11-17 06:07:27.612205 (UTC)
+Last updated: 2026-11-18 06:07:50.284691 (UTC)
 
 This dashboard tracks 24 EpiForeSITE projects with GitHub repositories.
 
@@ -10,7 +10,7 @@ This dashboard tracks 24 EpiForeSITE projects with GitHub repositories.
 | 🟡 Slow (commit in the last year) | 3 |
 | ⚪ Dormant (no commit in over a year) | 9 |
 | 📦 Published on CRAN | 8 |
-| Open issues / open PRs | 195 / 31 |
+| Open issues / open PRs | 195 / 29 |
 
 Projects are sorted by most recent commit.
 
